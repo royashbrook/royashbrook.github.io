@@ -1,0 +1,30 @@
+---
+layout: post
+title: Nulls to Codd to Fabian Pascal!
+---
+
+Recently, I was looking for some articles on treatment of nulls in databases. This was a surfing thread that actually originated as my attempt to find some already done benchmarks on coalesce(col,'') != '' vs. col is not null for performance purposes. I had already found some positive match ideas for finding things that weren't null. In fact, I don't remember the original context for this particular search anymore, but I know that's what I was looking for. In any case, that led me to this answers page:
+
+http://www.answers.com/topic/null-sql
+
+This enlightened me on some issues I wasn't aware of. For instance, my understanding of Codd's view on null was that it didn't exist. It's been years since I read his papers so that's just my mistake of memory. I personally am not a fan of nulls and I have professed many times that I don't think the 'absence' of value should be tracked in a relational database. The point of an RDBMS is to have one path to one item. If you don't actually have an item, what's the point? Now seeing the short explanation of Codd's view, it made a little more sense. I can understand the idea of creating a tracking mechanism that contains logic for understanding unknown. However, I would have to respectfully disagree with Codd that an unknown value should be tracked. I think an RDBMS should track only data that you know.
+
+So, in one way I was sad to find that I disagreed with a great man and I had been unwittingly espousing something thinking that my foundation was his. In reality, my foundation was my own logic and my personal understanding of the point of a RDBMS. As I read on, I found that I was not alone in my belief! Here is a quote from the very end of the article:
+
+> "Still other Relational Management (RM) experts, like the authors of The Third Manifesto, Chris Date and Hugh Darwen, have suggested that the SQL Null implementation is inherently flawed and should be eliminated altogether.[13] These experts often point to inconsistencies and flaws in the implementation of SQL Null-handling (particularly in aggregate functions) as proof that the entire concept of Null is flawed and should be removed from the Relational Model.[14] Others, like author Fabian Pascal, have stated a belief that 'how the function calculation should treat missing values is not governed by the relational model.'"
+
+Ah! Sweet validation. So, I'm not insane. I often times I have plenty of need for daily sanity checks, so although I cling to my beliefs and the direction that most of my logical decisions take me in, I do have doubts at times. So, due to the quote inside the above quote from Fabian Pascal, I went off in another surfing tangent to see who this Pascal guy was. His name sounded familiar, but hey, there is a language named that too. =P Isn't marketing great! =) I didn't have to search far for some good initial information. There was a link right there to another answers.com page:
+
+http://www.answers.com/topic/fabian-pascal
+
+I think I'll just include this choice quote an excerpt representing Pascal's belief and his unique style of expressing himself. =)
+
+"A lot of what is being said, written, or done in the database management field - or whatever is left of it - by vendors, the trade press and "experts" is irrelevant, misleading, or outright wrong. While this is to a degree true of computing in general, in the database field the problems are so acute that, claims to the contrary notwithstanding, technology is actually regressing!"
+
+Incredible! Now, I am no one even in the same ball field as Mr. Pascal. But I have said things similar to this about how databases are setup in the past. And I have had the same criticism of null values before. No one, if pressed, ever could really come up with a logical answer. The answers were always business related. It's the product we have, it's what we have in house skill for, it was that way when we got here, etc, etc. Now, of course, I don't pretend that I am on the same level as ol' Fabian, but it's nice to see someone giving a fine verbal thrashing to those who abandon the logical argument and try and talk about other topics or muddy the waters with other things that aren't really on topic.
+
+I continued to dive into many of fabian-a-lam-a-ding-dong's high quality writing. I found another *wonderful* point of agreement. XML! Long I have lamented the use of this 'technology' as a solution. I have had many, many, many often heated discussions with individuals about the inanity of XML as a transmission medium. If both sides agree on the data, what's the point in a 'self describing' medium? Programmer laziness is what it is. People, who want things to be super easy when programming when the point is not for programming to be easy, the point is to produce quality, bug free, solutions for a business. More of Mr. Pascal's writings concern the basic lack of knowledge of fundamentals in the RDBMS space as well as in many areas in the West. I would agree whole-heartedly. I have often felt (and stated) in many positions that my ability to excel did not lie in any particular great genius that I had as much as in the complete idiocy that permeates the IT industry. That's not to say I don't know any skilled people, but they are definitely rare. And the problem is not a technical one, it is a fundamental inability to think for oneself and apply logic to problems at hand.
+
+Some might just say there is a lack of common sense in general. In fact, in the general public. Our culture here in the states revolves around entertainment and not around doing what is right or just or... well anything that is grounded in a moral belief.
+
+BUT.... I digress. The point is really to blog about Fabian Pascal and some of his writings. I found it to be fascinating. I definitely do not have the knowledge or experience that he has. I could never tear down as many arguments as effectively and with so many well worded replies. =P But it is *awesome* to know that I'm not totally crazy.
