@@ -11,4 +11,4 @@ Here's a good article on them.
 
 http://ecoble.com/2007/11/25/green-computing-and-one-laptop-per-child-do-yourself-and-the-world-some-good/ 
 
-{% include youtube.html id=7kHIZXYJbWY %}
+<!-- {% include youtube.html id=7kHIZXYJbWY %} -->
