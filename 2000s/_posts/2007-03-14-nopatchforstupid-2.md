@@ -1,6 +1,6 @@
 ---
 layout: post
-title: nopatchforstupid #2
+title: nopatchforstupid 2
 ---
 
 stupid, not stupid
