@@ -4,11 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Stuff about me!
-
+Welcome to my blog. =)
 ### More Information
 
-I need to add some stuff here....
+Hi there! Hopefully you found something that helped you. If you have any comments you can just hit me up on twitter.
 
 ### Contact me
 
