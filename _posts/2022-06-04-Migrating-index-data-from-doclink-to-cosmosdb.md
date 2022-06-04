@@ -1,40 +1,38 @@
 ---
 layout: post
-published: false
+published: true
 title: Migrating index data from doclink to cosmosdb
-subtitle: >-
-  One! More! Time!
-date: '2022-05-20'
+subtitle: One! More! Time!
+date: '2022-06-04'
 ---
 
-After moving all of our documents into blob storage and creating an application to search the index for these documents, I discovered some gaps in my original export. I'm going to document the process to correct that here. The main issue seemed to just be some missing data in the export that I filtered out somewhere. I just walked through the process to export and import again down below, and while doing so I checked to make sure all of the data I was missing before, was in fact exported. I didn't check the counts in my original process at every step because ultimately I was pretty sure I might need to do it at least one more time, and.... well that's where this article comes in. =)
+After [moving all of our documents into blob storage]({{site.baseurl}}/2022/04/18/Moving-15-million-documents-to-the-cloud/) and [creating an application to search the index for these documents and download them]({{site.baseurl}}/2022/05/20/Creating-an-app-to-search-and-retrieve-documents-from-azure/), I discovered some gaps in my original export. I'm going to document the process to correct that here. The main issue seemed to just be some missing data in the export that I filtered out somewhere. I just walked through the process to export and import again down below, and while doing so I checked to make sure all of the data I was missing before, was in fact exported. I didn't check the counts in my original process at every step because ultimately I was pretty sure I might need to do it at least one more time, and.... well that's where this article comes in. =)
 
-#### What happened?
+## What happened?
 
 Well, nothing terrible. I moved everything and it all worked fine. But while testing with *another* stakeholder who wasn't engaged in the original discussion, we discovered some of the index data that was not moved, was something that they used. So I decided to go back and basically rebuild the cosmos db. Not delete the existing one, but just import a new one and update the keys and links to use the new one.
 
-Since I'm having to do this once, I don't really want to have to fiddle with the old SQL 2008 box (R1, yuck) anymore, so I wanted to go ahead and get this database just restored into a local docker container. I could put it on Azure like I did last time, but would be nice to just dev locally.
+Since I'm having to do this once, I don't really want to have to fiddle with the old SQL 2008 box (R1, yuck) anymore, so I wanted to go ahead and get this database just restored into a local docker container. I could put it on Azure like I did last time, but would be nice to just dev locally using docker.
 
-To this end, I'll refer to this page:
+To this end, I'll refer to [this page](https://docs.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container?view=sql-server-ver15) on the MS site to see what to do.
 
-https://docs.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server-container?view=sql-server-ver15
+## What I did
 
-Unfortunately, after reading a little bit, I see this:
+unfortunately, after reading a little bit, i see this:
 
 ![image](https://user-images.githubusercontent.com/7390156/169074369-20b76fbd-cb01-4e52-8f28-7a2005694af0.png)
 
-I'm not a docker expert, so let's go ahead and open up docker and maybe do some updates, etc.:
+i'm not a docker expert, so let's go ahead and open up docker and maybe do some updates, etc.:
 
-Updates!
+updates!
 
 ![image](https://user-images.githubusercontent.com/7390156/169074269-c0f75b76-ca91-4ba1-8ed8-aaccebe3a0e9.png)
-
 
 do it!
 
 ![image](https://user-images.githubusercontent.com/7390156/169085945-0c48d8e6-1b6d-49e1-9a9c-2537ecd85184.png)
 
-hmmm... well.... i guess we'll see?
+ummmm... hmmm... well.... i... guess we'll see?
 
 <img width="240" alt="image" src="https://user-images.githubusercontent.com/7390156/169088699-cd2090ed-ad2b-497c-a328-044c2a916f80.png">
 
@@ -53,7 +51,7 @@ ah well, that's what's up I suppose, so we'll just see how it goes for now.
 
 since I'm using M1 mac, I'll run the following as we need to use a different image. So.. if you're following along you'll need to install that image as well. I *believe* the command needs to be modified something like this. my bak file is in the downloads folder right now. I have a random password below, feel free to sub in your own!
 
-```
+```txt
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=NdFe!Vtb' \
    --name 'sql1' -p 1401:1433 \
    -v sql1data:/var/opt/mssql \
@@ -63,7 +61,7 @@ sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=NdFe!Vtb' \
 
 after some fiddling, i seem to have my -v commands working backwards. i trashed my containers and ran this instead:
 
-```
+```txt
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=NdFe!Vtb' \
    --name 'sql1' -p 1401:1433 \
    -v sql1data:/var/opt/mssql \
@@ -77,7 +75,7 @@ https://docs.microsoft.com/en-us/sql/linux/tutorial-restore-backup-in-sql-server
 
 While I wait for my file to copy, I'm going to go ahead and test my mounting/restore setup with the file from MS.
 
-```
+```txt
 sudo docker exec -it sql1 /opt/mssql-tools/bin/sqlcmd -S localhost \
    -U SA -P 'NdFe!Vtb' \
    -Q 'RESTORE FILELISTONLY FROM DISK = "/Downloads/wwi.bak"' \
@@ -92,7 +90,7 @@ i also noticed that i can't connect to the server running that that machine like
 
 per my documentation the other day i ran the following in powershell and was able to connect with no issues:
 
-```
+```txt
 docker pull mcr.microsoft.com/azure-sql-edge
 PS /Users/roy/gh/d> sudo docker run -e "ACCEPT_EULA=1" -e "MSSQL_SA_PASSWORD=NdFe!Vtb" `
 >> -p 1433:1433 --name sqledge --hostname sqledge `
@@ -103,7 +101,7 @@ let's try and run closer to that. i can see i stuck with 1433 instead of mapping
 
 <img width="581" alt="image" src="https://user-images.githubusercontent.com/7390156/169141164-f2268aa3-306c-4081-aa1d-8beb5963764c.png">
 
-```
+```txt
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=NdFe!Vtb' \
    -p 1433:1433 --name sqledge --hostname sqledge \
    -v sqledgedata:/var/opt/mssql \
@@ -157,7 +155,7 @@ I fixed this by bumping my space up. below is my 'post' restore space used.
 
 After this, I ran `RESTORE FILELISTONLY FROM DISK = '/Downloads/FRTLDoclink2_backup_2022_05_18_210005_2488013.bak'` and after I got the file list back, I ran this:
 
-```
+```sql
 RESTORE DATABASE fuzzy FROM DISK = '/Downloads/FRTLDoclink2_backup_2022_05_18_210005_2488013.bak'
 WITH REPLACE
     , MOVE 'FRTLDoclink2_Data' TO '/var/opt/mssql/data/fuzzy.mdf'
@@ -170,7 +168,7 @@ and after a little bit...
 
 Now we're golden! I think for this next part, I am just going to annotate a bunch of sql while I get the data staged.
 
-```
+```sql
 
 --figure out how much data total by years
 
@@ -371,7 +369,7 @@ Now we're golden! I think for this next part, I am just going to annotate a bunc
 
 I already did this process once before. At that time I exported the data to CSV and then converted that to JSON. At that time, I was working on a remote server, so I just did things that way. For this I am working on a local docker copy of sql, so I am just going to do attach directly and convert it using powershell locally. That looks like this:
 
-```
+```ps1
 # get data from sql
 Import-Module SqlServer -Cmdlet "Invoke-Sqlcmd"
 $cs = "Server=.;User ID=sa;Password=NdFe!Vtb;"
@@ -401,7 +399,7 @@ $ht |
 
 The query needs to be adjusted to fit, and you can change the name of the output file, but this is the way. This basically converts the table structure like this:
 
-```
+```txt
      id  k v
       --  - -
  1234567 12 xxxx
@@ -413,7 +411,7 @@ The query needs to be adjusted to fit, and you can change the name of the output
 
 to this json:
 
-```
+```json
 {
   "12": "xxxx",
   "13": "xxxx",
@@ -436,12 +434,12 @@ So fine... we'll do less data at a time and see how that goes.
 
 2022 only!
 
-```
+```sql
 -- select count(*) from fuzzy.dbo._a where exists (select 1 from documents where documentid = id and year(created)=2022)
 -- 19886
 ```
 
-```
+```ps1
 # get data from sql
 Import-Module SqlServer -Cmdlet "Invoke-Sqlcmd"
 $cs = "Server=.;database=fuzzy;User ID=sa;Password=NdFe!Vtb;"
@@ -467,7 +465,7 @@ $ht = foreach($g in $xg){
 $ht |
   ConvertTo-Json -Depth 4 -Compress |
   Set-Content .\2022.json
-  ```
+```
 
 definitely a more reasonable size. =P
 
