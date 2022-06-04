@@ -1,3 +1,6 @@
+* {
+  text-transform: lowercase
+}
 table {
   @extend .table;
   @extend .table-striped;
