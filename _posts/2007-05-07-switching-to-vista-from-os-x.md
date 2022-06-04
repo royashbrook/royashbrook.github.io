@@ -7,6 +7,6 @@ so i came across [this article](http://www.nik.com.au/archives/2007/05/06/switch
 
 His positive thoughts seem to be at odds with many other reviews out there. Most notably this recent review from my FAV hardware site, the big [H], HardOCP!
 
-It seems that it's a pretty good upgrade if you are a more normal user, perhaps? That generalization doesn't seem to fit either. I have actually been wanting to get a macbook pro for a while now. it's been something i've been saving for and hoping to use for my personal machine and also as my rails dev box instead of using windows. of course, with so many .net/ruby crossovers coming out now, perhaps i should just keep developing as i have been on windows and wait. os x is pretty though. =P and, yes, vista is pretty too, but it's not the same.  
+It seems that it's a pretty good upgrade if you are a more normal user, perhaps? That generalization doesn't seem to fit either. I have actually been wanting to get a macbook pro for a while now. it's been something i've been saving for and hoping to use for my personal machine and also as my rails dev box instead of using windows. of course, with so many .net/ruby crossovers coming out now, perhaps i should just keep developing as i have been on windows and wait. os x is pretty though. 😛 and, yes, vista is pretty too, but it's not the same.  
 
 getting a mac would probably help with my desires to do some mono development. 

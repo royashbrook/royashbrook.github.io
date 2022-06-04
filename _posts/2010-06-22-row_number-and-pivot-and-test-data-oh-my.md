@@ -12,6 +12,6 @@ Below is the end result of my answer. There are three basic parts of the solutio
 1. Build some test data and stage it
 2. Group the data and make some keys to re-join it
 3. Write a little report to show what we are after
-4. (bonus) a little pivot table to show some other groupings on the data =D
+4. (bonus) a little pivot table to show some other groupings on the data 😁
 
 {% gist b98af287a02f9431e363673f26d9d3cb %}

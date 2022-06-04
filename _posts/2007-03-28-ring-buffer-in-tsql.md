@@ -9,4 +9,4 @@ let's say we *did* want to create a ring buffer in tsql though. a better way i t
 
 {% gist 0c9fa2f27a8992c2ad527947d0076e11 %}
 
-maybe that will help someone. =) 
+maybe that will help someone. 😀 

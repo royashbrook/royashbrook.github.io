@@ -60,7 +60,7 @@ public static class Sniffer{
 
 #### Method 2
 
-So Method 2 is also ‘fairly’ straight forward. I ran into some issues with the bitwise operators that caused me enough pain to warrant mentioning it here. The basic problem was that .NET automatically would convert the values to int when it read them out of the byte and PowerShell did not. So all I had to do is cast the byte values to int prior to performing the bitwise operations and all was well. =) The only thing that was a bummer about this is I had less knowledge about bitwise operation than I would like and I couldn’t visualize the problem. so I had to write a third sniffer that simply output the different value portions of the bitwise operation to see which piece was breaking. In any case, here’s the PowerShell version:
+So Method 2 is also ‘fairly’ straight forward. I ran into some issues with the bitwise operators that caused me enough pain to warrant mentioning it here. The basic problem was that .NET automatically would convert the values to int when it read them out of the byte and PowerShell did not. So all I had to do is cast the byte values to int prior to performing the bitwise operations and all was well. 😀 The only thing that was a bummer about this is I had less knowledge about bitwise operation than I would like and I couldn’t visualize the problem. so I had to write a third sniffer that simply output the different value portions of the bitwise operation to see which piece was breaking. In any case, here’s the PowerShell version:
 
 ```powershell
 #Resolves Protocol Numbers to Strings

@@ -12,7 +12,7 @@ http://www.techcrunch.com/2007/05/29/microsoft-announces-surface-computer/
 
 i knew they were releasing 'something' tonight at midnight that was supposed to be some awesome new technology. i fell asleep but, as i'm sure you can see by the early timestamp i was actually still thinking about it in my sleep and it woke me up at like 5am with no clock because i had to know man. 
 
-this is awesome. minority report is here. =)
+this is awesome. minority report is here. 😀
 
 as a matter of fact, here's the video that i saw. it was last year in feb. i remember forwarding this to a bunch of my friends because i thought it was so incredibly amazing. this idea should change the world when it trickles down.
 

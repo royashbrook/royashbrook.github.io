@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XmlDocument-to-Byte-Array - don't forget your usings. =)
+title: XmlDocument-to-Byte-Array - don't forget your usings. 😀
 ---
 
 Convert XmlDocument to Byte Array

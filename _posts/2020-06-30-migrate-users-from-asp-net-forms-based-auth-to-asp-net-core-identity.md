@@ -24,7 +24,7 @@ Here are the sources for the relevant code from dotnet core identity:
 
 I am going to tweak these a bit for our purposes. First of all, I want to skip the options, secondly I don't want to have to pass in a user, I just want to put in a password and get the pass.
 
-So let's make an app that does that. I'll creatively call it 'h' for hasher. You can call it whatever you want though, just change 'h' below to something else. =)
+So let's make an app that does that. I'll creatively call it 'h' for hasher. You can call it whatever you want though, just change 'h' below to something else. 😀
 
 {% gist e708a7969084345069df4a43b3229567 InitialProjectSetup.ps1 %}
 

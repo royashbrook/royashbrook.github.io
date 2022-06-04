@@ -22,12 +22,12 @@ SELECT TOP 5 <fieldnames…> FROM [MyTable] AS [t0]
 GO
 ```
 
-That’s what I want to see, so yay. =)
+That’s what I want to see, so yay. 😀
 
 some links:
 http://madprops.org/blog/linq-to-sql-and-nolock-hints/
 http://www.hanselman.com/blog/GettingLINQToSQLAndLINQToEntitiesToUseNOLOCK.aspx
 
-ps. trying to use livewriter today. so far, not excited about it and still like word more =P hopefully i’ll get elightened.
+ps. trying to use livewriter today. so far, not excited about it and still like word more 😛 hopefully i’ll get elightened.
 
 

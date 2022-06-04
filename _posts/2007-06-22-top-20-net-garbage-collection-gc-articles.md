@@ -3,7 +3,7 @@ layout: post
 title: Top 20 .NET Garbage Collection (GC) Articles
 ---
 
-Ah. Garbage Collection... how I love and hate thee. =P
+Ah. Garbage Collection... how I love and hate thee. 😛
 
 I think one sad thing about programming in .net is that it seems many developers don't know or care anything about garbage collection and memory management. You used to *have* to know about it in order to write bug free code. I suppose it is a two edge sword in that developers can develop faster as the intention was to relieve developers of the need to know or care anything about memory management. I personally have always tried to follow best practices for implementation and have tried to stay somewhat cautious of issues related to memory. I've been fortunate in never really having any memory management related issues in my previous applications. However, there, but for the grace of God, I too could go.
 

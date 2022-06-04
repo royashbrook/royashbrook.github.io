@@ -89,9 +89,9 @@ IL_001C:  ret
 
 The calls out to the .NET libraries definitely make the code shorter. and we have to make two calls to the buffer for ours. I assume that the .NET team’s stuff is just faster than my humble shifting. I will also say that in my original code, I just converted the shift formula to a string without going to ushort first and that was slower every time. So it pays to do a little testing, but not too much. I could have just stuck with the BitConverter and the NetworkToHostOrder conversions. In many cases I didn’t even really register a tick difference unless I went with at least 10 cycles, that’s why I ever started at 1000 per number because it gave me a seemingly significant number to compare for the two operations. But even though the shifting is faster if it’s run a lot (and it’s much faster if you run tons and tons more cycles) it’s not relevant because you only will ever in practice (for my purposes anyway) run that cycle a single time.
 
-So I guess as is normally the case, just use the libraries that MS gives you for tasks like this. If they gave you a method for it, it’s probably faster than just doing it yourself for normal use. =P
+So I guess as is normally the case, just use the libraries that MS gives you for tasks like this. If they gave you a method for it, it’s probably faster than just doing it yourself for normal use. 😛
 
 Reference:
 - http://learningpcs.blogspot.com/2012/06/powershell-v2-playing-with-bor-and-band.html
 - http://blogs.technet.com/b/josebda/archive/2010/04/08/powershell-v2-get-date-vs-system-datetime-now-what-s-the-difference.aspx
-- Too many StackOverflow articles to count on things like this. =P
+- Too many StackOverflow articles to count on things like this. 😛

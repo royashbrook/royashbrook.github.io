@@ -37,4 +37,4 @@ My personal use-case for this was processes that mashed up data from SQL and Exc
 
 Any questions and you can hit me up on twitter [@RoyAshbrook](https://twitter.com/RoyAshbrook)
 
-I hope this helps out someone else out there =)
+I hope this helps out someone else out there 😀

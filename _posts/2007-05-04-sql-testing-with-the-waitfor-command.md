@@ -3,7 +3,7 @@ layout: post
 title: SQL Testing with the WAITFOR Command
 ---
 
-The WAITFOR command isn’t exactly new. But, I don’t really use it much. I did however recently have a desire to do some duration testing that wasn’t something akin to ‘insert 100000 rows into a table and see if stuff slows down.’ I wanted to simulate say a couple of transactions a second for a short period of time. Just a few minutes, really. I probably would have turned to writing some sort of mini test application for c# or writing a unit test that had a loop in vs. with a delay in it. Something like that. Fortunately, for me, I had recently perused and article about SQL2005 that had come up on my search for bulk importing…. another subject I intend to blog about soon. =P
+The WAITFOR command isn’t exactly new. But, I don’t really use it much. I did however recently have a desire to do some duration testing that wasn’t something akin to ‘insert 100000 rows into a table and see if stuff slows down.’ I wanted to simulate say a couple of transactions a second for a short period of time. Just a few minutes, really. I probably would have turned to writing some sort of mini test application for c# or writing a unit test that had a loop in vs. with a delay in it. Something like that. Fortunately, for me, I had recently perused and article about SQL2005 that had come up on my search for bulk importing…. another subject I intend to blog about soon. 😛
 
 This article was pretty old and spoke to the new changes in Yukon aka SQL2005 and one of the new enhancements was the WAITFOR command.
 

@@ -183,4 +183,4 @@ $d | group date, c-ip | select Count, Name | sort count -Descending
 $d | Out-GridView
 ```
 
-Unlike ConvertFrom-CSV, Import-CSV does not discard lines with a # in front, so you have to filter them out. In my case, i was just looking for something to see unique counts by uri,date, and clientip. Basically who is calling what and how frequently. =) Also, dump it out to the gridview to look through while I am doing this.
+Unlike ConvertFrom-CSV, Import-CSV does not discard lines with a # in front, so you have to filter them out. In my case, i was just looking for something to see unique counts by uri,date, and clientip. Basically who is calling what and how frequently. 😀 Also, dump it out to the gridview to look through while I am doing this.

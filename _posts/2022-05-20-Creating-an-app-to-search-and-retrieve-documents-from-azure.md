@@ -20,15 +20,15 @@ The functional requirements are pretty simple:
 1. Work similar to the previous system
 2. Performance and Cost should be the same or 'better'.
 
-This are my general guidelines for any system that needs to be replaced with an alternative. =)
+This are my general guidelines for any system that needs to be replaced with an alternative. 😀
 
 On #1, this is relatively simple because the current user experience is pretty simple. Login, pick some type of document type filter and search by some fields (one or many) then click search and view results. Click a result to view/download a document. 
 
 ![image](https://user-images.githubusercontent.com/7390156/163855483-64991e9f-5c19-4776-ae42-a4ead760c411.png)
 
-Well... first we have to build it, but the basic flow of the system. is pretty simple. =)
+Well... first we have to build it, but the basic flow of the system. is pretty simple. 😀
 
-On #2, performance should be fine as this is pretty basic. Any weirdness can be solved with indexing, but I don't expect major issues because this is static data that doesn't update. And cost will just be lower because we won't pay for the software and all estimates show this will cost dollars per year, not thousands for our usage. On cost you may think 'oh... are you one of those labor is free people? because it still takes time to migrate!!!' and you would be right to ask that, but wrong on the labor is free. Although from a business perspective, they probably wouldn't worry about this in terms of prioritization, the reality is that this machine is running on some of our last bits of hardware to be removed from an old data center. We already had backups so the plan for some time has been 'if this physical machine breaks, we'll migrate to the new thing'. This is 'the new thing' in that description. The physical machine hasn't broken, but we are at the time to sunset it, so yay! In short, we can't 'do nothing' anyway because we need to empty the data center. =) So the 'labor is free' is more like the 'labor cost is already included' to some extent. 
+On #2, performance should be fine as this is pretty basic. Any weirdness can be solved with indexing, but I don't expect major issues because this is static data that doesn't update. And cost will just be lower because we won't pay for the software and all estimates show this will cost dollars per year, not thousands for our usage. On cost you may think 'oh... are you one of those labor is free people? because it still takes time to migrate!!!' and you would be right to ask that, but wrong on the labor is free. Although from a business perspective, they probably wouldn't worry about this in terms of prioritization, the reality is that this machine is running on some of our last bits of hardware to be removed from an old data center. We already had backups so the plan for some time has been 'if this physical machine breaks, we'll migrate to the new thing'. This is 'the new thing' in that description. The physical machine hasn't broken, but we are at the time to sunset it, so yay! In short, we can't 'do nothing' anyway because we need to empty the data center. 😀 So the 'labor is free' is more like the 'labor cost is already included' to some extent. 
 
 So, now we know what to do functionally, but what do we build it on? React? Supabase is hot! Azure functions, lambda, blah blah? Well, for this I generally look at where I am now. I am a one man band for software work here currently, so I try not to stray too far from what we have. I don't want anyone who comes after me to have to maintain C, Java, Powershell, MS Flow jobs and GO or something. Even thought I'd love to write in as many languages as possible, it's just not a great stewardship of the environment one is in. Currently our environment for custom code consists of some legacy apps we wouldn't copy, dotnetcore apps, and sveltejs apps that use o365/msgraph for the service tier. All automated jobs are in powershell. SQL is all on azure for custom apps.
 
@@ -36,7 +36,7 @@ I have now introduced a couple of variables into the equation. A database in cos
 
 Some considerations for me, personally, as I work on this are that I could *probably* follow a very simple tutorial and built a blazor/wasm app in dotnet, which I have considered replacing some of our existing applications with. The other major option for me is implementing an app on sveltekit. I use sveltejs currently for one of our key internal applications, but I backend the services using some o365/msgraph magic and I think moving to a more 'traditional' setup with sveltekit would make more sense and provide a path to update the internal svelte app. This application is probably simple enough to provide some good proof-of-concept on both platforms and give some insight into how that would work.
 
-Some additional details about the environment are that our users would be using azuread for authentication anyway, and likely using rbac in some way for authorization to the app. Possibly more on that later, but ironically our dotnet apps do not use azure auth, but our svelte spa app does. =) Plus our dotnet apps use sql for backends, and the svelte app uses o365/msgraph for it's data. This was more of an organic development than planned, but I think it provides a little color on the situation.
+Some additional details about the environment are that our users would be using azuread for authentication anyway, and likely using rbac in some way for authorization to the app. Possibly more on that later, but ironically our dotnet apps do not use azure auth, but our svelte spa app does. 😀 Plus our dotnet apps use sql for backends, and the svelte app uses o365/msgraph for it's data. This was more of an organic development than planned, but I think it provides a little color on the situation.
 
 I think that's enough current state info. Now I'm going to just hop into a play-by-play of what I did.
 
@@ -96,7 +96,7 @@ As this only has limited users and no real 'roles' other than 'has access' I can
 
 We currently house some data on o365 and use msgraph for this purpose in another app and it works great. But msgraph doesn't appear to have a channel to just route to cosmos or sql. Maybe I can go through a data gateway and built some other service routing mechanism in o365 but I feel like that's just making things complicated at that point. The current o365/msgraph stuff works well because it's simple because the data is on sharepoint.
 
-## Day 4 (but not calendar day 4 =P)
+## Day 4 (but not calendar day 4 😛)
 
 Off and on tasks bumped in front of this over the course of about a week somewhat stalling any changes. When I came back to things on a fresh monday, I was ready for a fresh start an decided I would just take a hard turn and spin up a blazor/wasm app to test things out that way. This day was mostly spent cleaning up the existing progress, bundling all of the updates/changes I had fiddled with into a PR on my repo, and putting together my planned next steps. Which *really* just amounted to 'make a blazor/wasm version of this'.
 
@@ -104,7 +104,7 @@ I'm on a pretty new macbook and I haven't installed dotnet tools on here yet! So
 
 1. [Install dotnet of course!!](https://dotnet.microsoft.com/)
 
-That's it. =P Dotnet installed!
+That's it. 😛 Dotnet installed!
 ```
 Last login: Fri Apr 15 11:53:29 on ttys000
 roy@work gh % dotnet --list-sdks
@@ -156,7 +156,7 @@ namespace Data
     //etc etc x ~60 properties
 ```
 
-Added `dotnet add package Microsoft.Azure.Cosmos` as that's... kinda key for cosmos data also =D I'm guessing I could go pure rest based, but the idea behind a blazor app, for me anyway, is just using the ms tools as they seem to be intended without a lot of 'creative' flare in the implementation. Keep it simple, as they say.
+Added `dotnet add package Microsoft.Azure.Cosmos` as that's... kinda key for cosmos data also 😁 I'm guessing I could go pure rest based, but the idea behind a blazor app, for me anyway, is just using the ms tools as they seem to be intended without a lot of 'creative' flare in the implementation. Keep it simple, as they say.
 
 ... some time plasses while I fiddle with things ...
 
@@ -166,9 +166,9 @@ While setting things up and looking at handling this, I came across [this](https
 
 I'm sure the first question about this may be 'who tho?' and that's a valid question. The answers aren't too interesting. Remembering that this is an app for a small group of users (<20) our requirements on how it works and what is 'ok' is relatively easy to vet. So switching to a solution like this likely won't cause any disruption there. I don't think the cost will be signficantly higher based on what I've read. We also have had an interesting time getting the user population engaged in opening their mind about what types of applications can be built and getting something 'cool' like chat bot in place may generate some positive buzz that leads to additional citizen developer interest. Our users all utilize ms teams today, so this will probably count as something new and cool. Plus, I know our CIO will like a 'cool' implementation (and later confirmed this in a discussion with him). I had steered away from this thinking it would have more configuration points and probably a bit more complexity than a 'basic' app, but after looking at the setup on the article above, I think maybe I'm mistaken and it's similar.
 
-I would have a different view if we had various teams who were creating systems like this on a regular basis, but we still have an app running that was written in 2006, so.... some things here have a long life. =) And if we are going to do something a bit more exotic, why not do something with some 'cool' points as well. =)
+I would have a different view if we had various teams who were creating systems like this on a regular basis, but we still have an app running that was written in 2006, so.... some things here have a long life. 😀 And if we are going to do something a bit more exotic, why not do something with some 'cool' points as well. 😀
 
-I have written some discord integration bots in the past, but it's been awhile. I think I may have also written a poc teams bot at some point, but I am not 100% sure on that and if so it was quite some time back. I did write some integration with ms communicator as well, but it's been... over 10 years for sure since I did that, so while I have some conceptual exposure, nothing practical for today's world and am largely starting fresh. =P
+I have written some discord integration bots in the past, but it's been awhile. I think I may have also written a poc teams bot at some point, but I am not 100% sure on that and if so it was quite some time back. I did write some integration with ms communicator as well, but it's been... over 10 years for sure since I did that, so while I have some conceptual exposure, nothing practical for today's world and am largely starting fresh. 😛
 
 A little googling pointed me to https://dev.botframework.com/. Let's see what I did:
 
@@ -203,7 +203,7 @@ A little googling pointed me to https://dev.botframework.com/. Let's see what I 
   
   ![image](https://user-images.githubusercontent.com/7390156/164065558-c2af2047-5ba3-401d-83b3-b337f5d2ed4d.png)
   
-- After this, there was a getting started wizard on the right, I just clicked through those things in order. One of the first things I ran into was a publish wizard. Why not? Let's go =P Well, it was more creating a publishing profile. So I stepped through that. I have rights on Azure, so I signed in, selected my organization, and plugged in some info. 
+- After this, there was a getting started wizard on the right, I just clicked through those things in order. One of the first things I ran into was a publish wizard. Why not? Let's go 😛 Well, it was more creating a publishing profile. So I stepped through that. I have rights on Azure, so I signed in, selected my organization, and plugged in some info. 
 
   ![image](https://user-images.githubusercontent.com/7390156/164066844-4d6d0ad4-52fd-44b5-bf4e-c7ee25ffa3ce.png)
 
@@ -241,11 +241,11 @@ A little googling pointed me to https://dev.botframework.com/. Let's see what I 
 
   ![image](https://user-images.githubusercontent.com/7390156/164082791-ebd858e7-76ab-4a9e-ab97-d023998556af.png)
   
-  Now we're cookin'! Or... well at least we seem to have some ingredients out to start cooking. =)
+  Now we're cookin'! Or... well at least we seem to have some ingredients out to start cooking. 😀
   
   ![image](https://user-images.githubusercontent.com/7390156/164082973-e320df26-21e4-4ab3-8d34-0851ecc13539.png)
   
-- So now I need to see how I can 'run' this bot. I click the 'start bot' button at the top right and I get an error. I imagine this is because I am missing those components I noted earlier. I downloaded the Bot Framework Emulator, and fired it up. It does not appear that this solved the issue for me, so will need a bit more research. Hitting 'start bot' again just kicks out the same error which is some type of framework issue I see details about x64 which isn't great since I'm on an M1 mac. Maybe this won't work on here. I'll have to check on the next day, which may not be tomorrow =P
+- So now I need to see how I can 'run' this bot. I click the 'start bot' button at the top right and I get an error. I imagine this is because I am missing those components I noted earlier. I downloaded the Bot Framework Emulator, and fired it up. It does not appear that this solved the issue for me, so will need a bit more research. Hitting 'start bot' again just kicks out the same error which is some type of framework issue I see details about x64 which isn't great since I'm on an M1 mac. Maybe this won't work on here. I'll have to check on the next day, which may not be tomorrow 😛
 
 
 ## Day X, what's old is new again...
@@ -256,7 +256,7 @@ So, some time has passed as some other projects jumped in. As this keeps happeni
 
 The downside (and the reason i haven't done this yet) is that once something is built, a lot of times there is little business incentive to improve or move it until it is required. And having something 'working' will likely be 'good enough' for a long time. I'm going to be optimistic though, and use the opportunity to create some better visibility into the way some custom internal sites currently work by packaging up the project templates and putting them out on public github. There's some value there as well, so no time lost.
 
-At this point, if you aren't me, you have no idea what I'm talking about, so let's talk about the 'new' prototype based on something we currently use. This is the 'old' item referenced in my subtitle above. =P
+At this point, if you aren't me, you have no idea what I'm talking about, so let's talk about the 'new' prototype based on something we currently use. This is the 'old' item referenced in my subtitle above. 😛
 
 Currently, one of our most used internal tools is a dashboard type of application. Technically speaking, it is a visualizer for some json data that is protected by AzureAD for logins and authorization. The flow basically looks like the diagram below.
 
@@ -277,7 +277,7 @@ This is pretty simple, but msgraph uses the app registration and authorization w
 
 Firstly, I went ahead and created a blank of the project with the setup that I use currently. I haven't actually created a project template for it previously, so now seemed like a good time. I present [stunning-bassoon](https://github.com/royashbrook/stunning-bassoon)! Thank goodness for the random name generator, I am terrible with generating fun names and normally name these things something super boring like 't0'.
 
-Now I want to add the auth and other sync details that I want, for that I'll create a new project based on stunning-bassoon named [laughing-barnacle](https://github.com/royashbrook/laughing-barnacle). I love these names. =) I'll probably just call this lb for short moving forward.
+Now I want to add the auth and other sync details that I want, for that I'll create a new project based on stunning-bassoon named [laughing-barnacle](https://github.com/royashbrook/laughing-barnacle). I love these names. 😀 I'll probably just call this lb for short moving forward.
 
 To stub this out, I'm going to create a new app on my personal azure setup just to test. I name it for lb and just add a localhost redirect for now.
 
@@ -309,7 +309,7 @@ For me, I currently have users coming to the site and it triggers the auth immed
 
 ![image](https://user-images.githubusercontent.com/7390156/169849128-e213e518-8dfb-4d8a-b205-4b0fee976057.png)
 
-_After the last update, I had a ton of tasks jump in front and interrupt about a week. Work on this was somewhat sporadic, but I took a lot of screenshots of the key things so I'm g_oing to just kind of include some running commentary as best I can below. =)_
+_After the last update, I had a ton of tasks jump in front and interrupt about a week. Work on this was somewhat sporadic, but I took a lot of screenshots of the key things so I'm g_oing to just kind of include some running commentary as best I can below. 😀_
 
 Originally I tried to add this without a tenant. I had to give myself permission on graph while testing queries.
 
@@ -396,7 +396,7 @@ Now we need to add cosmos and blob storage.
 
 ## Captain's log, Stardate unknown...
 
-Additional time passes. I decided to take a day to try and use the azure keyvault instead of using a file on azure. I will add some screenshots below and some narrative, but the TLDR; of this story is that you can't do this with a SPA app currently because Azure Keyvault does not allow CORS. So you have to create some kind of extra service to do this, which defeats the entire purpose of using a SPA (in my particular situation) anyway. But below is my journey to discovering this knowledge. =P What I ended up with is https://github.com/royashbrook/crispy-adventure an example project that pulled from a *LIST* on sharepoint for secrets. Similar to the file pull I ended up using, but, you know, there it is.
+Additional time passes. I decided to take a day to try and use the azure keyvault instead of using a file on azure. I will add some screenshots below and some narrative, but the TLDR; of this story is that you can't do this with a SPA app currently because Azure Keyvault does not allow CORS. So you have to create some kind of extra service to do this, which defeats the entire purpose of using a SPA (in my particular situation) anyway. But below is my journey to discovering this knowledge. 😛 What I ended up with is https://github.com/royashbrook/crispy-adventure an example project that pulled from a *LIST* on sharepoint for secrets. Similar to the file pull I ended up using, but, you know, there it is.
 
 
 create a keyvault
@@ -517,7 +517,7 @@ this will leave you with a nice clean'ish response like
 }
 ```
 
-I was not able to figure out a way from the documentation to get *just* the one field property that i wanted, but i could limit the properties to just the id and only expand the one field value using the query above. The documentation on the query parameters leaves quite a bit to be desired. I can't imagine there isn't a way to just tell the server 'give me only this property value' but this is where we are for now. =)
+I was not able to figure out a way from the documentation to get *just* the one field property that i wanted, but i could limit the properties to just the id and only expand the one field value using the query above. The documentation on the query parameters leaves quite a bit to be desired. I can't imagine there isn't a way to just tell the server 'give me only this property value' but this is where we are for now. 😀
 
 ## Day 'The End', post-mortem, lessons learned, etc!
 
@@ -573,6 +573,6 @@ When you search, it will return up to 15 results (normally this is a very target
 
 The label up top is the 'document type' name from doclink. You can select in preference which document properties you want to show in this window as well.
 
-It's very basic, but very functional. For the initial import I only went back to 2010 instead of as far back as I could go (2006) so the index was smaller, but still had over 9.3 million records. For all of my tests the search was sub 1 second, that's pretty good. You can game the system or create much more complex queries where you wildcard every field and it's slower, but I was always able to get a result even if it took a bit so not bad for nearly free. The system is also easily setup to have the UI modified, but I just ran out of time and done always wins out over not done. =)
+It's very basic, but very functional. For the initial import I only went back to 2010 instead of as far back as I could go (2006) so the index was smaller, but still had over 9.3 million records. For all of my tests the search was sub 1 second, that's pretty good. You can game the system or create much more complex queries where you wildcard every field and it's slower, but I was always able to get a result even if it took a bit so not bad for nearly free. The system is also easily setup to have the UI modified, but I just ran out of time and done always wins out over not done. 😀
 
 I also realizes that I didn't note the hosting. On the initial deploy, I'm using azure static sites, but it's just a static site so it could be deployed anywhere, the CORS rules just have to be updated appropriately everywhere.

@@ -8,7 +8,7 @@ I love these
 Ashbrook, Roy [9:59 AM]:
 i have seen entire procs that have like a whole extra complicated proc in them, just because they want one temp table that they think they need hehe
 Ashbrook, Roy [9:59 AM]:
-so they copy like the top 80% of the proc, just to get the 10% in the middle =P
+so they copy like the top 80% of the proc, just to get the 10% in the middle 😛
 Johnson, Sean [9:59 AM]:
 ok you are looking at this along with me apparently... LOL!
 Johnson, Sean [9:59 AM]:

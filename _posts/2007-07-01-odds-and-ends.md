@@ -25,5 +25,5 @@ some unit testing stuff i wanted to read<br />
 and, finally, a great article on troubleshooting memory management issues with .net<br />
 <a href="http://msdn.microsoft.com/msdnmag/issues/06/11/CLRInsideOut/">http://msdn.microsoft.com/msdnmag/issues/06/11/CLRInsideOut/</a></p>
 <p> </p>
-<p>I'm tagging this post with 'tips' if for nothing else than err.exe =) </p>
+<p>I'm tagging this post with 'tips' if for nothing else than err.exe 😀 </p>
 

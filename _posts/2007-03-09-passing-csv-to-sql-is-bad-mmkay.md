@@ -27,6 +27,6 @@ the *point* is that you shouldn't be using csv values to pass to a proc. it's ac
 
 __Edit from the future!__
 
-> Here in the year 2018, I have a new gist to add to this entry :-)
+> Here in the year 2018, I have a new gist to add to this entry 😀
 
 {% gist a26f23c6364670205b48d5f98e113456 %}

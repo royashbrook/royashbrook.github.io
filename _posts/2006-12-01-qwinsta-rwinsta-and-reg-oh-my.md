@@ -41,7 +41,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server
     fDenyTSConnections  REG_DWORD       0x1
 ```
 
-0x1 means the DENY is true. so you can't connect. you want to set it to 0 as in the set example above to DISABLE the DENY. why they couldn't just make it an enable setting and then we could just set it to true or false. yay double negatives in the windows registry. =P
+0x1 means the DENY is true. so you can't connect. you want to set it to 0 as in the set example above to DISABLE the DENY. why they couldn't just make it an enable setting and then we could just set it to true or false. yay double negatives in the windows registry. 😛
 
 after you set this, you'll have to reboot the machine, which you can simply use the shutdown tool for.
 
@@ -55,4 +55,4 @@ and just in case you say "OH CRAP, I DIDN'T MEAN TO SHUT THAT DOWN" right after 
 shutdown -a -m \\server1
 ```
 
-that includes our fun lesson for the day. hopefully that helps someone. i know that qwinsta and rwinsta have been two of the most often used tools in my administrative life/half-lives =P
+that includes our fun lesson for the day. hopefully that helps someone. i know that qwinsta and rwinsta have been two of the most often used tools in my administrative life/half-lives 😛

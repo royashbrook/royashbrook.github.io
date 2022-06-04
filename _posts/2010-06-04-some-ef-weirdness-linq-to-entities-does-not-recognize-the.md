@@ -28,6 +28,6 @@ public bool canAccessCustomer(long l, string s) {
 }
 ```
 
-One could argue about taking in a long that is stored as a string and why it's not a long or some equivalent number in the db, but sometimes things are the way they are. =P
+One could argue about taking in a long that is stored as a string and why it's not a long or some equivalent number in the db, but sometimes things are the way they are. 😛
 
 I found a couple of different pages referencing this one, but this seemed to be the best although it had a bunch of other 'solutions' other than simply passing a string in instead of running the function in your LINQ query which seemed the simplest to me.

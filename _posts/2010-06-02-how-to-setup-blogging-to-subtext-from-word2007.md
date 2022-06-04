@@ -3,7 +3,7 @@ layout: post
 title: How to setup blogging to subtext from word2007
 ---
 
-Specifically, how to set this up for OUR blog =P Thanks to Dennis and this article for the info. These are steps for someone that doesn't already have a blog setup in word 2007. I will assume if you do, you already know enough and the settings/info from this will be enough.
+Specifically, how to set this up for OUR blog 😛 Thanks to Dennis and this article for the info. These are steps for someone that doesn't already have a blog setup in word 2007. I will assume if you do, you already know enough and the settings/info from this will be enough.
 
 1. Click new document and choose 'Blog Post'. The following screen will come up. Click 'Register Now'.
 ![img](http://www.drowningintechnicaldebt.com/images/www_drowningintechnicaldebt_com/royashbrook/060210_1456_Howtosetupb1.png)
@@ -18,4 +18,4 @@ Specifically, how to set this up for OUR blog =P Thanks to Dennis and this artic
 ![img](http://www.drowningintechnicaldebt.com/images/www_drowningintechnicaldebt_com/royashbrook/060210_1456_Howtosetupb5.png
 )
 5. OK, finally, I will note that I followed the advice on codingmonk and also clicked 'Picture Options' in step 3. The default picture provider was 'blog provider' so I just clicked OK and moved on. I don't know if that's necessary, but I did it as well.
-6. Enjoy posting from Word 2007! =D
+6. Enjoy posting from Word 2007! 😁

@@ -17,6 +17,6 @@ Here's a little blurb from the Gibson site:
 
 ![img](http://www.gibson.com/robotguitar/images/story_1.jpg)
 
-This guitar has been awesome. Sadly, the pull out button that you use to do all the fun stuff came off the other day. I took it to the shop and the guitar repair guy had sadly (for me) gone to a Van Halen concert, which was good for him. =P Further bad luck for me is that it is a holiday weekend and the repair shop is closed until Tuesday. They assured me they would take care of it for me on Tuesday first thing so I will be back up there then and I'll let everyone know how my first interaction with Gibson's customer service and Guitar Center's repair shop goes. =) I expect great things based on my trips to their shop.
+This guitar has been awesome. Sadly, the pull out button that you use to do all the fun stuff came off the other day. I took it to the shop and the guitar repair guy had sadly (for me) gone to a Van Halen concert, which was good for him. 😛 Further bad luck for me is that it is a holiday weekend and the repair shop is closed until Tuesday. They assured me they would take care of it for me on Tuesday first thing so I will be back up there then and I'll let everyone know how my first interaction with Gibson's customer service and Guitar Center's repair shop goes. 😀 I expect great things based on my trips to their shop.
 
  Some [reviews](http://www.google.com/search?q=gibson+robot+guitar+%22reviews%22) if you are interested. 

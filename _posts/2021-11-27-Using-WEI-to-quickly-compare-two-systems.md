@@ -93,8 +93,8 @@ How did my two systems compare?
 
 Graveyard PC scores higher on the overall systemscore, but if we look at the breakdown scores we can see Beast machine *really* wins everywhere except disk. So my recommendation was pretty simple, Machine A _should_ probably get a new SSD and it'll do the job for a long time. But it works fine as is. I think, in this case, the major decider might be the portability since Machine B is far more portable than Machine A. Regardless of the choice, this is a quick way to compare two systems.
 
-I will note that both machines were running Win10 fully patched, probably best to always ensure all of the drivers are similar so these comparisons are apples to apples as best as possible. Astute readers may have noticed the scores in my screenshot are different, that is because I wrote this blog post on yet another machine that is also no rockstart as well. It works fine, but looking at this I can see it's not even as good as the old machine from 2013 lol. I'll console myself with the fact that this computer has 16GB of RAM I suppose. =P
+I will note that both machines were running Win10 fully patched, probably best to always ensure all of the drivers are similar so these comparisons are apples to apples as best as possible. Astute readers may have noticed the scores in my screenshot are different, that is because I wrote this blog post on yet another machine that is also no rockstart as well. It works fine, but looking at this I can see it's not even as good as the old machine from 2013 lol. I'll console myself with the fact that this computer has 16GB of RAM I suppose. 😛
 
 Any questions and you can hit me up on twitter [@RoyAshbrook](https://twitter.com/RoyAshbrook)
 
-I hope this helps out someone else out there =)
+I hope this helps out someone else out there 😀

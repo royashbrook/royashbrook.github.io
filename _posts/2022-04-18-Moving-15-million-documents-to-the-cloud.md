@@ -104,7 +104,7 @@ To copy the files, I simply used robocopy to mirror the source folder using some
 
 Initially I forgot to put the MT flag and it ran all night and only copied about 5% of the data. So the next morning I remembered I should do that so stopped the command and ran it again with 128 threads. It uses 8 threads by default. Just doing that increased the speed by about 10x for the copy and it finished in about an hour or two the next morning I believe.
 
-I also originally created my vm with some wrong config and had to wipe it and start over. Not a big deal, but just worth noting as it was part of the experience. =)
+I also originally created my vm with some wrong config and had to wipe it and start over. Not a big deal, but just worth noting as it was part of the experience. 😀
 
 At the end of the day I had the files copying and the database restored to a sql server in azure.
 
@@ -145,7 +145,7 @@ And then I simply right clicked on each folder on db01 to get a count:
 
 Everything matches, so yay, this part is done. Files are moved.
 
-_note: Worth noting here that I did go back and do a bunch of spot checks to just make sure files were where I expected them to be. Additionally, when I was fiddling with UI prototypes and messing around, I would simply pull random values from the index data, and then hit the files randomly as well. This happened later, but I already knew I would be doing that, so I just moved on at this point. Just wanted to toss an editor's note in here that I *did* do a little more than just check the counts to test the data was there. =)_
+_note: Worth noting here that I did go back and do a bunch of spot checks to just make sure files were where I expected them to be. Additionally, when I was fiddling with UI prototypes and messing around, I would simply pull random values from the index data, and then hit the files randomly as well. This happened later, but I already knew I would be doing that, so I just moved on at this point. Just wanted to toss an editor's note in here that I *did* do a little more than just check the counts to test the data was there. 😀_
 
 On the original server, Folders 015 and 016 were moved to another location so they don't show up in the app any longer. Just in case there are some kind of versioning updates or anything, I just want to minimize that. When a file is not there, the app will toss an error with the file name and we simply go and retrieve that out of cool storage. This is already an existing practice so nothing that will cause any unforseen experiences. 017 is left as I'll probably go back later and take one last look to see if anyone snuck a document in somehow as we have not completely disconnected all scanners, just repointed to them to the new system.
 
@@ -166,9 +166,9 @@ Plan for the next day:
 
 #### Day 4
 
-So first thing I did on Day 4 was start writing this blog post. I had already intended to keep a running narrative, but I realized I was on Day 4 and just had notes of what I was doing which isn't exactly what I wanted to do originally. So I caught up to here. =)
+So first thing I did on Day 4 was start writing this blog post. I had already intended to keep a running narrative, but I realized I was on Day 4 and just had notes of what I was doing which isn't exactly what I wanted to do originally. So I caught up to here. 😀
 
-_note: The entire goal of this day-by-day log was to give some insight into this type of a process. So letting my notes languish seemed like a bad idea. =P fortunately I got it going at this point as I had some interruptions later that would have made recounting what all went on a bit of a nightmare._
+_note: The entire goal of this day-by-day log was to give some insight into this type of a process. So letting my notes languish seemed like a bad idea. 😛 fortunately I got it going at this point as I had some interruptions later that would have made recounting what all went on a bit of a nightmare._
 
 I'm still not exactly sure what shape the data is going to take, so I cleared out all of the data from the database just to narrow the objects in my head space for now. DB01 was turned off for now and I am using Azure Data Studio for all of my sql work on my mac. The key tables with metadata that I need are these:
 
@@ -226,7 +226,7 @@ which was one of the solutions [here](https://stackoverflow.com/questions/127218
 
 Dropping audit tables got me back another 10-15GB and 25million rows or so. I basically repeated this process several times over about an hour or so to just keep peeling out data. While I was doing this, I would pull out some kind of batch by name or some other criteria, maybe take a look through the tables to make sure there was nothing I wanted to keep, and then purge any other tables. After about an hour I had peeled ~25GB out of the ~100GB db. Obviously I hadn't made it to any of the big tables yet and *hopefully* we would end up keeping quite a bit as most of this data *is* index data, but you never know.
 
-I had a soft target of at least getting below 50GB as I had to increase my pool DB max size from 50GB to fit this particular database, so I wanted to target that so I could put things back where they were. =)
+I had a soft target of at least getting below 50GB as I had to increase my pool DB max size from 50GB to fit this particular database, so I wanted to target that so I could put things back where they were. 😀
 
 Finally, I got everything down to 11 tables. Most were pretty small as they are just lookup tables so I wouldn't need those long term, but I'm going to hang onto them for the moment. Since there is no report helper in azure data studio, I had to look up a query to pull the same data.
 
@@ -266,7 +266,7 @@ results:
 
 Not too shabby, but I think we can probably kick some of these indexes off. Given the size difference, I started with the Documents and DocumentFiles tables to see how performance was dropping the non PK indexes. Most likely, this will all simply end up as a single table using the file name as the key since that file name matches the blob path to the file. As this is an archive, there will be no more property types or anything to add, so there isn't really a need to map types to tables,etc. We can just use columns. I'm thinking this will be easier/faster to do, in terms of manipulating the data, within SQL. But once I get a canned query, I may just extract the data a year at a time and import it.
 
-It also *appears* that I could just add these values as tags onto the blobs and I think searching that would just be a traffic cost which is minimal as far as I can tell. Most of the pricing data I could find had to do with using azure search which would be more in tune with using AI to build an index and search based on extracting data. But since I already have the index, that doesn't seem really needed. These are just thoughts I'm thinking while I wait for the initial index drop to take place on the smaller tables. =)
+It also *appears* that I could just add these values as tags onto the blobs and I think searching that would just be a traffic cost which is minimal as far as I can tell. Most of the pricing data I could find had to do with using azure search which would be more in tune with using AI to build an index and search based on extracting data. But since I already have the index, that doesn't seem really needed. These are just thoughts I'm thinking while I wait for the initial index drop to take place on the smaller tables. 😀
 
 ...time passes...
 
@@ -290,7 +290,7 @@ For our propertycharvalue table (has most of the metadata) there is a single ind
 
 ...time passes...
 
-After some more fiddling around, I finally noticed that the indexes that were named as if they were clustered, were not in fact clustered. this was causing some inadvertant index disabling and just generally silliness. So, make sure you know which are clustered and which aren't before you start messing around. It just so happened that the first index I picked to disable on several of the tables happened to be the clustered index even though the name made me think it was not. Lesson learned. =) Unfortunately, disabling that index meant we needed to rebuild it to turn it back on. This took some time. =)
+After some more fiddling around, I finally noticed that the indexes that were named as if they were clustered, were not in fact clustered. this was causing some inadvertant index disabling and just generally silliness. So, make sure you know which are clustered and which aren't before you start messing around. It just so happened that the first index I picked to disable on several of the tables happened to be the clustered index even though the name made me think it was not. Lesson learned. 😀 Unfortunately, disabling that index meant we needed to rebuild it to turn it back on. This took some time. 😀
 
 ...later that night...
 
@@ -298,12 +298,12 @@ Rebuilding the main index took ~4 hours. Once this was finished I removed all of
 
 A quick google shows that dbcc is still [the way](https://docs.microsoft.com/en-us/azure/azure-sql/database/file-space-manage#shrink-large-databases) to go so I checked the files (only one for this db) and ran a shrink with a target of 30GB. This took about 2 hours, but when done I was able to resize the pool and that ticks the box for me.
 
-Plan for the next day is continued. Since it's very late, I'll probably change it some tomorrow based on what went on today. =)
+Plan for the next day is continued. Since it's very late, I'll probably change it some tomorrow based on what went on today. 😀
 
 
 #### Day 5
 
-Data transforming hell. =) I am leaning more towards putting this database into cosmos db at this point, but I don't want to have 100 million objects with empty properties as many of these don't have the same properties, so I need to clean things up a bit more and squish down a bit more. This, unfortunately, takes a lot of time with this many rows. After some manipulation, our final table has just over 15 million documents and about 10 properties per document on average.
+Data transforming hell. 😀 I am leaning more towards putting this database into cosmos db at this point, but I don't want to have 100 million objects with empty properties as many of these don't have the same properties, so I need to clean things up a bit more and squish down a bit more. This, unfortunately, takes a lot of time with this many rows. After some manipulation, our final table has just over 15 million documents and about 10 properties per document on average.
 
 Due to the way I was working on this, I did end up spinning back up the DB server so I could work on the pool as well as doing some additional work on the VM because they wouldn't share resources. I didn't run into anything that seemed to be performance bottleneck'ed on the pool, but since i had another box I just spun it up since they don't touch each other at all.
 
@@ -313,7 +313,7 @@ I'm not 100% sure on how to convert this to json and do it with this many docume
 
 It is now a Saturday, so I could just put this on the shelf, but I have a hard time letting go of tasks that may need to run in batch over a long period of time when there is a weekend. So I took some more time to work on this. A big part of what I was thinking about was whether I wanted to go nosql with this dataset. I was leaning in this direction just due to the sporadic use of this data and the fact that nosql was kind of in vogue to a degree.
 
-The dataset itself has been boiled down to a single table of index data for the files. FileID, Key, Value is basically the setup. Imaginatively using names of id,k,v. =) This table has 145million rows and takes up about 7GB. So, nothing crazy, but lots of rows. It is simply enough to just add search terms and filter things and this works, but is not particularly satisfying.
+The dataset itself has been boiled down to a single table of index data for the files. FileID, Key, Value is basically the setup. Imaginatively using names of id,k,v. 😀 This table has 145million rows and takes up about 7GB. So, nothing crazy, but lots of rows. It is simply enough to just add search terms and filter things and this works, but is not particularly satisfying.
 
 some sample sql where I call the table t0:
 ```sql
@@ -382,11 +382,11 @@ I decided to import this just using a file. I pulled the Azure Cosmos DB Data Mi
 
 <img width="470" alt="image" src="https://user-images.githubusercontent.com/7390156/160256103-0ee1a279-7e0b-4dc1-b2b7-adda7aa0c48f.png">
 
-Interesting. I did check the prettify and compress... maybe this number has to do with that? Let's see what's going on if I import this. =)
+Interesting. I did check the prettify and compress... maybe this number has to do with that? Let's see what's going on if I import this. 😀
 
 <img width="443" alt="image" src="https://user-images.githubusercontent.com/7390156/160260128-5721024e-11f1-4f22-b307-e75286485c07.png">
 
-Took a bit longer, but still nothing crazy. =) This seemed great, except it appears that each record was imported as a single property of the object. So instead of something like this:
+Took a bit longer, but still nothing crazy. 😀 This seemed great, except it appears that each record was imported as a single property of the object. So instead of something like this:
 
 ```json
 {
@@ -405,7 +405,7 @@ we ended up with something like this:
 }
 ```
 
-I was just running this while I was doing other stuff around the house on the weekend, so apparently whatever I clicked on didn't do what I expected. Time to try again it seems. =P
+I was just running this while I was doing other stuff around the house on the weekend, so apparently whatever I clicked on didn't do what I expected. Time to try again it seems. 😛
 
 So this time I looked under advanced and updated some items differently. I also used the table that already had the pregenerated json data. The first time I did a for json auto, basically the same way I built the first query.
 
@@ -447,7 +447,7 @@ Message: The network connectivity issue encountered for 'Microsoft.Compute'; can
 
 This server is in a.... somewhat unusual networking setup, so I think this could have something to do with this as there were some other changes in place. After fiddling with this in the background for about a half a day, I decided it really didn't matter because it's probably worth it to me to go back and review things and reset. There are some other fields that I think I will integrate anyway after some side conversations with some of the users over the last couple of weeks anyway.
 
-To this end, I decided to, instead just load this stuff up on a docker instance so I could just work on this locally. I haven't re-installed docker since switching over to a mac, so... two birds. =)
+To this end, I decided to, instead just load this stuff up on a docker instance so I could just work on this locally. I haven't re-installed docker since switching over to a mac, so... two birds. 😀
 
 First I installed docker by following the directions on the website, then headed to the MS page to get latest instructions on running a local sql:
 https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&preserve-view=true&pivots=cs1-bash
@@ -474,7 +474,7 @@ WARNING: The requested image's platform (linux/amd64) does not match the detecte
 PS /Users/roy/gh/d> 
 ```
 
-ok.. so that makes sense. =) a google search later and I have this page:
+ok.. so that makes sense. 😀 a google search later and I have this page:
 https://database.guide/how-to-install-sql-server-on-an-m1-mac-arm64/
 
 ```
@@ -608,7 +608,7 @@ All the info I can find online seems to be more geared towards a more holistic s
 
 I had to get on a phone call, so while I was on there I went ahead and exported the data for the previous 10 years which is all that anyone really *wanted* to keep, although we did have data going back another 5 years. I believe there was a previous purge of the existing system based on some missing files, so some of that old index data is no good anyway. I'll just stick with this for now. We do have backups of the entire system in the event there is some emergency and we need to go and grab a full restore. Each *full* year was about 450MB of csv data with the prior 3 years taking up only ~20MB total.
 
-Unfortunately, this server is old enough that it seems the azure portal doesn't work via the web and I can't update the browser anymore. Understandable. =) So I had to copy the files down to my local machine next. I am interested in seeing what type of memory consumption doing a powershell read on one of these 500mb csv files will produce. Copying the 4GB files down over VPN took about 30 min. There is a lot of waiting on things to finish with this sort of thing. =P
+Unfortunately, this server is old enough that it seems the azure portal doesn't work via the web and I can't update the browser anymore. Understandable. 😀 So I had to copy the files down to my local machine next. I am interested in seeing what type of memory consumption doing a powershell read on one of these 500mb csv files will produce. Copying the 4GB files down over VPN took about 30 min. There is a lot of waiting on things to finish with this sort of thing. 😛
 
 ...time passes while I import data...
 
@@ -618,11 +618,11 @@ After importing data for a day or so, all the data was in cosmos. This was just 
 
 Maybe there was a way to do this without showing a preview, but as I was already completely finished with all 10+current years import for cosmos, I just tabled this for now and moved on to my next step which was importing a copy of the id,k,v structure into azure sql. I still have room on the pool for storage under the current plan, so this wasn't going to cost anything extra and it took up about 8GB of space. Theh cosmos db took up just under 10GB of space, so not a major storage size difference moving to cosmos. I suppose if the data was 100x bigger, maybe that would make a difference. Fortunately for this solution, I think this will be fine probably forever. Considering this is 10 years of data.
 
-I also stopped by local sql docker instance as I wasn't using it. Doesn't matter much, but it was a loose plot thread here I thought I'd tie up =P The reason for this was just that since db01 popped back up finally, I just did the data manipulation there and I already had wanted to test the import from that box since it was already *in* Azure. That box was deallocated, and I think that on startup I was just getting not helpful errors all along the way while it was spinning up. I didn't do anything other than start it and then watch it fail over and over when I was looking at it. But when I checked the next day it was back up and everything was working. I didn't go back and look at any of the job details to find more info as I'm guessing it was just something with the spin up related to not waiting and ultimately I moved on anyway. Anyway, since it was up I could do the little bit of testing and just do the sql manipulation I wanted to do on that box before deleting it instead of doing it locally. Glad I did get docker back installed for next time I need to do something similar.
+I also stopped by local sql docker instance as I wasn't using it. Doesn't matter much, but it was a loose plot thread here I thought I'd tie up 😛 The reason for this was just that since db01 popped back up finally, I just did the data manipulation there and I already had wanted to test the import from that box since it was already *in* Azure. That box was deallocated, and I think that on startup I was just getting not helpful errors all along the way while it was spinning up. I didn't do anything other than start it and then watch it fail over and over when I was looking at it. But when I checked the next day it was back up and everything was working. I didn't go back and look at any of the job details to find more info as I'm guessing it was just something with the spin up related to not waiting and ultimately I moved on anyway. Anyway, since it was up I could do the little bit of testing and just do the sql manipulation I wanted to do on that box before deleting it instead of doing it locally. Glad I did get docker back installed for next time I need to do something similar.
 
 #### Part 1, done. Thoughts.
 
-My goal for this post was simply to provide an account of someone actually doing this process. Hopefully this gives some insight to someone else, or at least future me about what happened here. =)
+My goal for this post was simply to provide an account of someone actually doing this process. Hopefully this gives some insight to someone else, or at least future me about what happened here. 😀
 
 My original high level to do:
 
@@ -631,7 +631,7 @@ My original high level to do:
 3. Create new searcher app
 4. Turn off old machine (equipment will decomm in another effort)
 
-I found that as I was tracking this work for myself, I kind of got distracted by #3 while I was in the midst of #1 and #2. In part, I think this was largely because I thought I wanted to move to cosmos for the database access, but wanted to 'test' the azure tables approach which led to a lot of kind of back and forth mentally for me. Also, there was a lot of 'waiting' during imports that led to idle thoughts about #3 which turned into actual coding. =)
+I found that as I was tracking this work for myself, I kind of got distracted by #3 while I was in the midst of #1 and #2. In part, I think this was largely because I thought I wanted to move to cosmos for the database access, but wanted to 'test' the azure tables approach which led to a lot of kind of back and forth mentally for me. Also, there was a lot of 'waiting' during imports that led to idle thoughts about #3 which turned into actual coding. 😀
 
 I also had several unrelated projects jump into the middle of this that I had to handle that did not really help that back and forth. Ultimately, I pulled the tricker on cosmos, and then imported the same CSV data into azure sql as a backup if I needed to do some adhoc query of the data and didn't want to do it on cosmos for some reason.
 
@@ -639,11 +639,11 @@ After solidifying that, Step 1 and 2 were done, and knowing Step 4 is not someth
 
 I think that, as with much prototyping, this process would have been faster if I had focused on 'speed'. I could have simply grabbed the 2020s data which was tiny and then started prototyping a UI. But since I already had all of the data, I instead focused on getting all of the data out there so I didn't have to address that step again. Some of this is just due to the nature of the way work flows for me currently. I may have a project bump out all current work due to a business need at any time and sometimes I have to shelve work for months. So I am always in a state of thinking about how I may need to shelve something tomorrow and try not to get things 'halfway' setup that I can't easily delete. Creating a prototype that could be orphaned for a long time isn't valuable, but getting this data 'migrated' is valuable because we *could* lose or shut down the original machine in a pinch if this project is shelved for a year because at that time this archive will be even older and have even less frequent use.
 
-That being said, if I could go back, I would rather have (from a dev standpoint) just dumped a couple years of data somewhere, prototyped away, and then wrapped things up with a '...now i just need to import the rest of the data....' type of idea. But had I used azure tables for that, I may have been sad in the future when I tried to upload all of that data though. =P
+That being said, if I could go back, I would rather have (from a dev standpoint) just dumped a couple years of data somewhere, prototyped away, and then wrapped things up with a '...now i just need to import the rest of the data....' type of idea. But had I used azure tables for that, I may have been sad in the future when I tried to upload all of that data though. 😛
 
 Regardless, I am declaring this part 'done' and moving on. Done > Perfect, and I am done moving the files and the index data to azure.
 
-Next up, the indexing app. =)
+Next up, the indexing app. 😀
 
 PS: I can't remember if I noted it up above, but also adding backups on all of these items in Azure is included. I am just doing 24 hour backups on cosmos (as we don't change this data ever) and maintaining the default daily type of backup policy on the sql pool for that copy. As mentioned, there is a copy of the original .bak file with the blob storage in archive mode for 'just in case one day' scenario and the blobs have soft deletes turned on. We also do have some tape backups of the data from past years offsite that we may maintain forever. It's unlikely those will come into play, but it will provide some reasonable assurance *if* we ever want to purge documents that are very old. Although blob storage is so cheap, it seems like better to just move everything that is super old into 'archive' status then just add a step in the logic to get the document that requires a ticket instead of allowing the user to get super old documents.
 

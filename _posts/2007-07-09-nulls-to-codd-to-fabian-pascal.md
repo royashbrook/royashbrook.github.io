@@ -13,11 +13,11 @@ So, in one way I was sad to find that I disagreed with a great man and I had bee
 
 > "Still other Relational Management (RM) experts, like the authors of The Third Manifesto, Chris Date and Hugh Darwen, have suggested that the SQL Null implementation is inherently flawed and should be eliminated altogether.[13] These experts often point to inconsistencies and flaws in the implementation of SQL Null-handling (particularly in aggregate functions) as proof that the entire concept of Null is flawed and should be removed from the Relational Model.[14] Others, like author Fabian Pascal, have stated a belief that 'how the function calculation should treat missing values is not governed by the relational model.'"
 
-Ah! Sweet validation. So, I'm not insane. I often times I have plenty of need for daily sanity checks, so although I cling to my beliefs and the direction that most of my logical decisions take me in, I do have doubts at times. So, due to the quote inside the above quote from Fabian Pascal, I went off in another surfing tangent to see who this Pascal guy was. His name sounded familiar, but hey, there is a language named that too. =P Isn't marketing great! =) I didn't have to search far for some good initial information. There was a link right there to another answers.com page:
+Ah! Sweet validation. So, I'm not insane. I often times I have plenty of need for daily sanity checks, so although I cling to my beliefs and the direction that most of my logical decisions take me in, I do have doubts at times. So, due to the quote inside the above quote from Fabian Pascal, I went off in another surfing tangent to see who this Pascal guy was. His name sounded familiar, but hey, there is a language named that too. 😛 Isn't marketing great! 😀 I didn't have to search far for some good initial information. There was a link right there to another answers.com page:
 
 http://www.answers.com/topic/fabian-pascal
 
-I think I'll just include this choice quote an excerpt representing Pascal's belief and his unique style of expressing himself. =)
+I think I'll just include this choice quote an excerpt representing Pascal's belief and his unique style of expressing himself. 😀
 
 "A lot of what is being said, written, or done in the database management field - or whatever is left of it - by vendors, the trade press and "experts" is irrelevant, misleading, or outright wrong. While this is to a degree true of computing in general, in the database field the problems are so acute that, claims to the contrary notwithstanding, technology is actually regressing!"
 
@@ -27,4 +27,4 @@ I continued to dive into many of fabian-a-lam-a-ding-dong's high quality writing
 
 Some might just say there is a lack of common sense in general. In fact, in the general public. Our culture here in the states revolves around entertainment and not around doing what is right or just or... well anything that is grounded in a moral belief.
 
-BUT.... I digress. The point is really to blog about Fabian Pascal and some of his writings. I found it to be fascinating. I definitely do not have the knowledge or experience that he has. I could never tear down as many arguments as effectively and with so many well worded replies. =P But it is *awesome* to know that I'm not totally crazy.
+BUT.... I digress. The point is really to blog about Fabian Pascal and some of his writings. I found it to be fascinating. I definitely do not have the knowledge or experience that he has. I could never tear down as many arguments as effectively and with so many well worded replies. 😛 But it is *awesome* to know that I'm not totally crazy.

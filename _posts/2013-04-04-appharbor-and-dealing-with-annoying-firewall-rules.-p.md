@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AppHarbor and dealing with annoying firewall rules. =P
+title: AppHarbor and dealing with annoying firewall rules. 😛
 ---
 
 A few days ago I was reading one of my usual news feeds [The Daily WTF](http://thedailywtf.com/) and saw [Alex](http://thedailywtf.com/Authors/Alex_Papadimoulis.aspx)’s post [(A (Long Overdue) BuildMaster Introduction)](http://thedailywtf.com/Articles/A-(Long-Overdue)-BuildMaster-Introduction.aspx) on their BuildMaster product. It looked pretty cool so I downloaded it myself and forwarded it to a colleague at another place of employment. Unfortunately for that individual their firewall policy prevents downloading .EXE files so they could not download any of the installs as they were all .EXE files.
 
 So firstly, I would recommend that anyone that wants to have their cool/nifty product downloaded by someone in a large corp should at least *offer* the option of getting a compressed version that is not an MSI or an EXE file. I’ve seen these blocked at a number of institutions and while they are blocked for good reason, if you want to start a guerilla campaign with developers, it’s easier if they can get your stuff.
 
-Secondly, to circumvent this PITA, I present __DEX__ which stands for 'download EXE'. =) If you are one of the frustrated folks who can’t download EXE files, feel free to use this 'new' and 'innovative' service =P. You will probably want to let me know as I may change the key from time to time.
+Secondly, to circumvent this PITA, I present __DEX__ which stands for 'download EXE'. 😀 If you are one of the frustrated folks who can’t download EXE files, feel free to use this 'new' and 'innovative' service 😛. You will probably want to let me know as I may change the key from time to time.
 
 It’s very simple.
 

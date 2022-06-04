@@ -43,4 +43,4 @@ Here is the docker hub location for microsoft/powershell.
 
 https://hub.docker.com/r/microsoft/powershell/
 
-I'll update this post if I ever find an answer, but I wanted to post it here so maybe someone else out in the world won't feel so lonely if they run into this issue. =P I'm sure that I could just use another method to send the email, but that doesn't mean it's not an issue. =)
+I'll update this post if I ever find an answer, but I wanted to post it here so maybe someone else out in the world won't feel so lonely if they run into this issue. 😛 I'm sure that I could just use another method to send the email, but that doesn't mean it's not an issue. 😀

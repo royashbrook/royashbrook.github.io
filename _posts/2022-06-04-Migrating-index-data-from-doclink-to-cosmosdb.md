@@ -6,7 +6,7 @@ subtitle: One! More! Time!
 date: '2022-06-04'
 ---
 
-After [moving all of our documents into blob storage]({{site.baseurl}}/2022/04/18/Moving-15-million-documents-to-the-cloud/) and [creating an application to search the index for these documents and download them]({{site.baseurl}}/2022/05/20/Creating-an-app-to-search-and-retrieve-documents-from-azure/), I discovered some gaps in my original export. I'm going to document the process to correct that here. The main issue seemed to just be some missing data in the export that I filtered out somewhere. I just walked through the process to export and import again down below, and while doing so I checked to make sure all of the data I was missing before, was in fact exported. I didn't check the counts in my original process at every step because ultimately I was pretty sure I might need to do it at least one more time, and.... well that's where this article comes in. =)
+After [moving all of our documents into blob storage]({{site.baseurl}}/2022/04/18/Moving-15-million-documents-to-the-cloud/) and [creating an application to search the index for these documents and download them]({{site.baseurl}}/2022/05/20/Creating-an-app-to-search-and-retrieve-documents-from-azure/), I discovered some gaps in my original export. I'm going to document the process to correct that here. The main issue seemed to just be some missing data in the export that I filtered out somewhere. I just walked through the process to export and import again down below, and while doing so I checked to make sure all of the data I was missing before, was in fact exported. I didn't check the counts in my original process at every step because ultimately I was pretty sure I might need to do it at least one more time, and.... well that's where this article comes in. 😀
 
 ## What happened?
 
@@ -36,7 +36,7 @@ ummmm... hmmm... well.... i... guess we'll see?
 
 <img width="240" alt="image" src="https://user-images.githubusercontent.com/7390156/169088699-cd2090ed-ad2b-497c-a328-044c2a916f80.png">
 
-so, instead i did a brew upgrade docker.... ? No daemon running... ok, so reinstalling we go. =) I'm leaving this in because I like to record how many silly things you run into when you want to do some 'simple' thing.
+so, instead i did a brew upgrade docker.... ? No daemon running... ok, so reinstalling we go. 😀 I'm leaving this in because I like to record how many silly things you run into when you want to do some 'simple' thing.
 
 ![image](https://user-images.githubusercontent.com/7390156/169121688-95b67505-a0da-437a-8535-02d46fadc1da.png)
 
@@ -135,7 +135,7 @@ I guess that sqlcmd must not be part of the m1 image. That's ok! Sadly, after ab
 
 <img width="452" alt="image" src="https://user-images.githubusercontent.com/7390156/169307466-f6bfc1e6-965a-4472-ada4-0b1bd78adb59.png">
 
-This is working, but also very slow. But should be finished with plenty of time today. I believe this same issue happened last time and due to this I ended up fiddling around on the original server..... guess what? it's starting to look like that's what's about to happen again. =)
+This is working, but also very slow. But should be finished with plenty of time today. I believe this same issue happened last time and due to this I ended up fiddling around on the original server..... guess what? it's starting to look like that's what's about to happen again. 😀
 
 At least it *was!* until I got tied up doing some other stuff. So now it's finished, yay!
 
@@ -320,7 +320,7 @@ Now we're golden! I think for this next part, I am just going to annotate a bunc
 -- (2050039 rows affected)
 -- Total execution time: 00:00:33.897
 
--- i'm just going ignore that number diff and assume it's for a good reason for now =)
+-- i'm just going ignore that number diff and assume it's for a good reason for now 😀
 
 -- that diff count probably has to do with versions or rescans of some sort, but good to see we have a
 --  file name for every actual id so far
@@ -336,7 +336,7 @@ Now we're golden! I think for this next part, I am just going to annotate a bunc
 --  let's check our count
 -- select count(*) from Documents where exists (select 1 from _a where id = DocumentId)
 -- 2050039
--- that's what we expect, every parent has an actual parent record =)
+-- that's what we expect, every parent has an actual parent record 😀
 
 -- insert the records, we'll convert the date to yyyy-mm-dd as we don't need times for this purpose
 --  we definitely need documenttypeid, but pagecount is probably not needed. i thought it was nice
@@ -422,7 +422,7 @@ to this json:
 }
 ```
 
-which we can just import right into cosmos. =) you don't *have* to have the id mapped in here as you can generate them on the inbound, but i had some id values to use already. these id values don't have any real value, but since they are there, i figured i would just use those for now. last time I did this, I simply ran this a year at a time, but this time I figured I would give it a whirl just converting all of the 2017plus data at once. selecting it was fine and only seemed to take a couple of minutes. the hash to json process took a little bit longer though. about 25min i think. and it wasn't too huge when completed.
+which we can just import right into cosmos. 😀 you don't *have* to have the id mapped in here as you can generate them on the inbound, but i had some id values to use already. these id values don't have any real value, but since they are there, i figured i would just use those for now. last time I did this, I simply ran this a year at a time, but this time I figured I would give it a whirl just converting all of the 2017plus data at once. selecting it was fine and only seemed to take a couple of minutes. the hash to json process took a little bit longer though. about 25min i think. and it wasn't too huge when completed.
 
 <img width="643" alt="image" src="https://user-images.githubusercontent.com/7390156/169609681-a5d5bdc1-e155-44fd-8bd6-2ce56d7ecf40.png">
 
@@ -467,7 +467,7 @@ $ht |
   Set-Content .\2022.json
 ```
 
-definitely a more reasonable size. =P
+definitely a more reasonable size. 😛
 
 ![image](https://user-images.githubusercontent.com/7390156/169611161-944219fc-6119-44c0-8fcb-ebddd9325d43.png)
 
@@ -511,7 +511,7 @@ not way way more documents, but it seems like it took more like 5 hours. maybe a
 
 I'd say the lesson learned here is that smaller uploads seem to work way better. there are other ways to get the data into cosmos, but since this is just a one time thing, i didn't really go down that road. someone who has read the multiple articles about this might say that this isn't a one time thing because i have already done this a few times. but i mostly meant this isn't feeding from a system so there isn't a need to create any kind of robust automated import process. As of writing this, it appears that [this](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import) page on MS describes how to do this via code.
 
-After this, the documents showed up as expected and all was well with the world. =D
+After this, the documents showed up as expected and all was well with the world. 😁
 
 
 

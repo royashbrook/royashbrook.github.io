@@ -7,7 +7,7 @@ I like to do this every once in a while when I am practicing a song or if I just
 
 http://www.youtube.com/watch?v=Ed49S2nyBD0
 
-The ID from this video is Ed49S2nyBD0. Just replace the that ID in the url below and form the URL the same as below and autoplay and loop till your heart is content. =P
+The ID from this video is Ed49S2nyBD0. Just replace the that ID in the url below and form the URL the same as below and autoplay and loop till your heart is content. 😛
 
 http://www.youtube.com/v/Ed49S2nyBD0&autoplay=1&loop=1
 

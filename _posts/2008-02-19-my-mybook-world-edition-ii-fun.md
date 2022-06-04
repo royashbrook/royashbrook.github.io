@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My MyBook World Edition II Fun =) - Prelude
+title: My MyBook World Edition II Fun 😀 - Prelude
 ---
 
 So, with the recent announcement of CompUSA's closing, I have  been swinging by there on occasion to check out the deals on whatever stuff there is. I recently purchased a MyBook World Edition II 1TB model and have been having a lot of fun with it. They were down to 299 which isn't ridiculously cheap, but it's far, far below the retail of... whatever it was. Something crazy like 450 i think. I found them several places online for around 320ish. I went by the other day and they are now down to 257 which *is* a pretty sweet deal.
@@ -16,7 +16,7 @@ With my major goal accomplished, I had some hope that I would be able to 'hack' 
 5. Download predefined lists of blogs etc I wanted to read and convert them to audio.
 6. Serve as a print server? Maybe print out predefined documents for consumption.
 
-As you can see, a lot of this revolves around creating custom media to consume. I'm not a big fan of pirated video/music. I personally buy all my DVD and CD media I want to consume. I do believe that torrenting broadcast television is not illegal, however I want to stream the video from my PCTV2GO for my broadcast shows and record them from there. Once this is complete, I have thought about purchasing something with a little more streaming power to perform something similar to what Orb does. I'm not sure I want to make that kind of investment, especially if I can have this converting all of the information I want to consume in ways that are friendly to me and my devices. I'll let you know how it goes. =D
+As you can see, a lot of this revolves around creating custom media to consume. I'm not a big fan of pirated video/music. I personally buy all my DVD and CD media I want to consume. I do believe that torrenting broadcast television is not illegal, however I want to stream the video from my PCTV2GO for my broadcast shows and record them from there. Once this is complete, I have thought about purchasing something with a little more streaming power to perform something similar to what Orb does. I'm not sure I want to make that kind of investment, especially if I can have this converting all of the information I want to consume in ways that are friendly to me and my devices. I'll let you know how it goes. 😁
 
 PS. I recently spoke to a manager at my local CompUSA about this announcement and confirmed both of the Jacksonville, FL stores will remain open under the new deal. 
 

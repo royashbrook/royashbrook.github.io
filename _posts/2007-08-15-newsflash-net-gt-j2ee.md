@@ -11,7 +11,7 @@ title: newsflash .NET > J2EE
 <p>The application offers full interoperability with J2EE and <a onclick="javascript:Track('ctl00_ctl01|ctl00_ctl02',this);" href="http://go.microsoft.com/?linkid=6895278">IBM WebSphere's Trade 6.1</a> sample application. As such, the application offers an excellent opportunity for developers to learn about .NET and building interoperable, service-oriented applications."</p>
 </blockquote>
 <p> <br />
-Oh, ho, ho! Daily, I have to listen to drivel about IBM's supposed superiority over .NET, which I have often found extremely hard to believe given the quality of applications I have seen generally produced by JAVA shops. This isn't a knock against JAVA devs or JAVA as a whole, I can only know what I have seen. I haven't seen anything "superior" ever from JAVA over .NET. I haven't seen anything I considered inferior either... until now. =)</p>
+Oh, ho, ho! Daily, I have to listen to drivel about IBM's supposed superiority over .NET, which I have often found extremely hard to believe given the quality of applications I have seen generally produced by JAVA shops. This isn't a knock against JAVA devs or JAVA as a whole, I can only know what I have seen. I haven't seen anything "superior" ever from JAVA over .NET. I haven't seen anything I considered inferior either... until now. 😀</p>
 <p>Check the short numbers snagged from <a mce_href="http://hyperthink.net/blog/2007/08/10/net%20stocktrader%20wcf%20vs%20websphere.aspx" href="http://hyperthink.net/blog/2007/08/10/net%20stocktrader%20wcf%20vs%20websphere.aspx">here</a>:</p>
 <ul>
     <li>.NET 3.0 hosted on IIS with an Http binding and XML encoding offers <strong>124% better throughput </strong>than the fastest WebSphere/EJB Web Service implementation tested; and 46% better throughput than the JDBC (no entity beans) WebSphere implementation tested. </li>
@@ -39,7 +39,7 @@ Some highlights:</p>
 </blockquote>
 <p> </p>
 <p>MS full paper: <a mce_href="http://download.microsoft.com/download/F/C/D/FCDDF8B6-AE97-4CDB-BEBC-FF22DA524A98/TradeBenchmark.pdf" href="http://download.microsoft.com/download/F/C/D/FCDDF8B6-AE97-4CDB-BEBC-FF22DA524A98/TradeBenchmark.pdf">http://download.microsoft.com/download/F/C/D/FCDDF8B6-AE97-4CDB-BEBC-FF22DA524A98/TradeBenchmark.pdf</a></p>
-<p>Two blog posts that showed up in my post-location-research. =P </p>
+<p>Two blog posts that showed up in my post-location-research. 😛 </p>
 <p><a mce_href="http://blogs.msdn.com/smcbreen/archive/2007/06/29/net-v-j2ee-sample-application.aspx" href="http://blogs.msdn.com/smcbreen/archive/2007/06/29/net-v-j2ee-sample-application.aspx">http://blogs.msdn.com/smcbreen/archive/2007/06/29/net-v-j2ee-sample-application.aspx</a></p>
 <p><a mce_href="http://hyperthink.net/blog/2007/08/10/net%20stocktrader%20wcf%20vs%20websphere.aspx" href="http://hyperthink.net/blog/2007/08/10/net%20stocktrader%20wcf%20vs%20websphere.aspx">http://hyperthink.net/blog/2007/08/10/net%20stocktrader%20wcf%20vs%20websphere.aspx</a> </p>
 <p> </p>

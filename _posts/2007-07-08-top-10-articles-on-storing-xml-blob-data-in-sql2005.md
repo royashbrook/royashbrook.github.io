@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Top 10 Articles on Storing XML BLOB data in SQL2005, maybe using compression, sqlclr or encryption =)
+title: Top 10 Articles on Storing XML BLOB data in SQL2005, maybe using compression, sqlclr or encryption 😀
 ---
 
 SERIOUSLY too long of an article name, but hey, it covers a large amount of stuff. I basically had some large XML blobs (wordml docs) I needed to store in SQL and I wanted to store them as compressed BLOBs to save space. These are the articles I found most useful at the time when I was working on that.

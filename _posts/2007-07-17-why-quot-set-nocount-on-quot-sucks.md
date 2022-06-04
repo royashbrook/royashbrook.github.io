@@ -21,6 +21,6 @@ using (SqlCommand cm = new SqlCommand(q, c)) {
     c.Close();
 }
 ```
-So, just to alleviate any confusion, if you are using some sort of data abstraction code that relies on the recordcount that is suppressed by utilizing SET NOCOUNT ON, don't use SET NOCOUNT ON. It will suck then. =) I would recommend strongly that for *any* performance enhancements you want to apply, you test and retest.
+So, just to alleviate any confusion, if you are using some sort of data abstraction code that relies on the recordcount that is suppressed by utilizing SET NOCOUNT ON, don't use SET NOCOUNT ON. It will suck then. 😀 I would recommend strongly that for *any* performance enhancements you want to apply, you test and retest.
 
 Hopefully no one takes this as my advocating against SET NOCOUNT ON, I am still a fan and use it almost all of the time. I personally have never had it cause me any pain, but for every enhancement, there is someone for whom it has caused a lot of pain, so please test accordingly.

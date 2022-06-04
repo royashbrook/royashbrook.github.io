@@ -3,7 +3,7 @@ layout: post
 title: Top 10 Fabian Pascal Articles/Pages/Responses
 ---
 
-I'm a big fan of Fabian Pascal. Here are 10 Articles/Pages/Responses that I like the best. =P You can find tons more from these though. They are almost all pure gold. =)
+I'm a big fan of Fabian Pascal. Here are 10 Articles/Pages/Responses that I like the best. 😛 You can find tons more from these though. They are almost all pure gold. 😀
 
 <ol>
     <li><a mce_href="http://www.dbazine.com/ofinterest/oi-articles/pascal13" href="http://www.dbazine.com/ofinterest/oi-articles/pascal13">On Grinding Water: Reply to St. Laurent</a></li>

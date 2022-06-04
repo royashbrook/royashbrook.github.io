@@ -20,7 +20,7 @@ That's grand, the only bad thing is that I really wanted to run TWO piholes for 
 
 If we were using named services or something we could give DNS entries to, there are a ton of load balancers/reverse proxy solutions out there for solving this problem. I couldn't do that with DNS since you are handing out an IP. It would be nice if you could create a public VIP that any/all of the hosts could answer, but that doesn't appear to be a thing that will currently work since the IP has to be associated with *something* for routing. I think you can use the macvlan networking if you want to do this in some fashion, but I decided to just go the service route and hand out a couple of IPs from my swarm and let docker do the hard work.
 
-In my case, I have 4 raspis with 192.168.2.201-204, so I just picked .201 and .202 for the DNS IPs to hand out on my LAN. You can actually go to the others and it works fine too, but my router is only handing out two IPs so... that's how it is. =) (we'll talk another day about getting DHCP setup like this and then handing out all 4 IPs, muhahaha!)
+In my case, I have 4 raspis with 192.168.2.201-204, so I just picked .201 and .202 for the DNS IPs to hand out on my LAN. You can actually go to the others and it works fine too, but my router is only handing out two IPs so... that's how it is. 😀 (we'll talk another day about getting DHCP setup like this and then handing out all 4 IPs, muhahaha!)
 
 ## Persistant Storage
 

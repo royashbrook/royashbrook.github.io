@@ -11,4 +11,4 @@ It’s pretty fast so far. I took about 5 different samples from speedtest.net a
 
 I’ll have to check back in April to see if the sales guy was lying.
 
-_Note: I wanted to put a link to the current plan we were offered, but it doesn’t appear to be on Comcast’s site. Now *all* of the new plans are 20/50/105. Go figure. =P_
+_Note: I wanted to put a link to the current plan we were offered, but it doesn’t appear to be on Comcast’s site. Now *all* of the new plans are 20/50/105. Go figure. 😛_

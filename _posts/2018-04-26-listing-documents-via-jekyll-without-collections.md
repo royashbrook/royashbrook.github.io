@@ -23,7 +23,7 @@ And then on page1.md, to show these files, I did something like this:
 
 And this would generate a list of links to the individual pages. You can also filter based on the t0/1 document type if you want to assign with another filter and you can chop up the name however you like or using whatever format you like. I am just using three fields, splitting on `'-'` and leaving off the 'type' code that I put on the end with t0/1 in this example.
 
-In my case, I did get quite detailed and had a few different structures for each of the items. You can definitely make a case *not* to do this, but the goal was to make this easy for other people to add content and in all of our particular use cases, we are just adding items to show up in a list. Maybe a couple of items a quarter or so. So this way I could make the instructions something like 'name the file this, then copy it here' and that's it. =)
+In my case, I did get quite detailed and had a few different structures for each of the items. You can definitely make a case *not* to do this, but the goal was to make this easy for other people to add content and in all of our particular use cases, we are just adding items to show up in a list. Maybe a couple of items a quarter or so. So this way I could make the instructions something like 'name the file this, then copy it here' and that's it. 😀
 
 You could also put these files in any folder, I'm guessing. So if you had, say, 'licenses' that had to be renewed from time to time, you could just create licenses.md and make a licenses folder and filter based on that in the path. I just decided to put things in assets to keep the root dir clean.
 

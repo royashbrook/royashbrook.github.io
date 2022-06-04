@@ -12,4 +12,4 @@ To accomplish this, every time the process runs instead of just selecting all of
 
 {% gist 95b6d08f17d0910243c6f3c6e7934d70 %}
 
-I could also just build an array of the file names that were created during this run, but currently the script isn't architected to pass that kind of data arround since due to includes and I didn't want to create a global variable to hold it. The downside of this is that if the file format changes it will break how we figure out the filter, but that's a different problem than getting the object with a max value. =)
+I could also just build an array of the file names that were created during this run, but currently the script isn't architected to pass that kind of data arround since due to includes and I didn't want to create a global variable to hold it. The downside of this is that if the file format changes it will break how we figure out the filter, but that's a different problem than getting the object with a max value. 😀

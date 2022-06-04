@@ -7,4 +7,4 @@ title: css and microformats
 - [cool railsish site. addictedtonew](http://addictedtonew.com/) 
 - [microformats are cool](http://microformats.org/)
 - [microformat related blog post](http://errtheblog.com/post/37)
-- [cssplay](http://www.cssplay.co.uk/index.html) this site is always awesome and i'm gonna link it just because of the sheer amount of times i've had it open when i was posting something. =P
+- [cssplay](http://www.cssplay.co.uk/index.html) this site is always awesome and i'm gonna link it just because of the sheer amount of times i've had it open when i was posting something. 😛

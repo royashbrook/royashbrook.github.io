@@ -132,7 +132,7 @@ plugins: [
 		require('gitlog1'),
 ```
 
-Pretty simple. Just remove to the reference to the file for require and instead use the package name. I then removed the file and that was it. =)
+Pretty simple. Just remove to the reference to the file for require and instead use the package name. I then removed the file and that was it. 😀
 
 ## Final thoughts
 

@@ -5,7 +5,7 @@ title: Add a work-item to devops with storypoints from CLI
 subtitle: 'CLI, CLI, CLI'
 date: '2020-07-01'
 ---
-TLDR; `az boards work-item create --type "user story" --title "some title" --project "project name" --fields "Microsoft.VSTS.Scheduling.StoryPoints=1"` That's the command. =)
+TLDR; `az boards work-item create --type "user story" --title "some title" --project "project name" --fields "Microsoft.VSTS.Scheduling.StoryPoints=1"` That's the command. 😀
 
 ## Can I have a little more info?
 

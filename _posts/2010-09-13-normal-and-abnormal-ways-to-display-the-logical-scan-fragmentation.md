@@ -29,7 +29,7 @@ Etc etc etc etc
 
  
 
-To do this I just did a simple for loop with a call out to a …. I forget what these things are even called since no one uses them anymore or cares. I thought about trying to convert it to one command (that's what I started with) but there were scoping issues remember what the last hit was on the table name and it really just seemed silly about 15 minutes into playing with it so I just got it here and left it. =P
+To do this I just did a simple for loop with a call out to a …. I forget what these things are even called since no one uses them anymore or cares. I thought about trying to convert it to one command (that's what I started with) but there were scoping issues remember what the last hit was on the table name and it really just seemed silly about 15 minutes into playing with it so I just got it here and left it. 😛
 
 ```sh
 set tablename=
@@ -95,7 +95,7 @@ TABLE level scan performed.
 - Avg. Page Density (full).....................: 6.57%
 ```
 
-This actually becomes much sillier if you consider how easy it is to parse text with LINQ or if you just simply resort to using a DM to get this data. The following works fine and will break it out by each index. =P
+This actually becomes much sillier if you consider how easy it is to parse text with LINQ or if you just simply resort to using a DM to get this data. The following works fine and will break it out by each index. 😛
 
 ```sql
 select
@@ -111,7 +111,7 @@ where
     avg_fragmentation_in_percent > 0
 ```
 
-Links for those of you who hate yourselves =P
+Links for those of you who hate yourselves 😛
 http://msdn.microsoft.com/en-us/library/ms188917.aspx
 http://msdn.microsoft.com/en-us/library/ms188917.aspx
 http://technet.microsoft.com/en-us/library/cc966523.aspx

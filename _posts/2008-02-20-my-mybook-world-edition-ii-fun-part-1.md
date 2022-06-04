@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My MyBook World Edition II Fun =) - Part 1
+title: My MyBook World Edition II Fun 😀 - Part 1
 ---
 
 So in my previous post, I set the following goals for my MyBook WE2:
@@ -25,5 +25,5 @@ I've decided to add two more goals to my list:
 7. Automate personal administrative tasks.
 8. sync my backup data with my s3 account. 
 
-Number one is in reference to servicing the many generic daily tasks i can automate with scripting. I could purchase any box to do these for me, but I'd like to have them run off of this one little device. This will probably be accomplished via some of the other goals, but I think it is a distinct bullet point itself. Two is something I've wanted to do for a long while. I have a large majority of what I consider 'important personal data' backed up to s3 already. Really pictures/movies of my kids, family, etc. I do have them backed up on some DVDs around here as well, but I would like it to be organized digitally, then simply stored on Amazon's S3 for offsite. Storage. Perhaps, eventually, incorporating this with a formalized plan using DVDs or whatever we're burning to at that time. Hard drives are cheap enough, it seems a waste to burn to media, but who knows, and that's in the future and has nothing to do with accomplishing the goal really. =P
-More to come, that's enough for now. The fun has barely started!!! =D 
+Number one is in reference to servicing the many generic daily tasks i can automate with scripting. I could purchase any box to do these for me, but I'd like to have them run off of this one little device. This will probably be accomplished via some of the other goals, but I think it is a distinct bullet point itself. Two is something I've wanted to do for a long while. I have a large majority of what I consider 'important personal data' backed up to s3 already. Really pictures/movies of my kids, family, etc. I do have them backed up on some DVDs around here as well, but I would like it to be organized digitally, then simply stored on Amazon's S3 for offsite. Storage. Perhaps, eventually, incorporating this with a formalized plan using DVDs or whatever we're burning to at that time. Hard drives are cheap enough, it seems a waste to burn to media, but who knows, and that's in the future and has nothing to do with accomplishing the goal really. 😛
+More to come, that's enough for now. The fun has barely started!!! 😁 

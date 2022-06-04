@@ -12,7 +12,7 @@ There were a few other articles online I used, but mostly [this one](https://hel
 
 I used powershell for this, so first I setup my target projects. In the source I had one repo per project, but now I will have a much smaller number of projects with multiple related repos in each. I'm not including the azure devops extension commands for this, but you can look them up [here](https://docs.microsoft.com/en-us/azure/devops/cli/) if you wish.
 
-I created a dummy folder to work in. I'm not sure if anyone else accidentally creates folders like this in their onedrive folder, but, if so, don't. =) 
+I created a dummy folder to work in. I'm not sure if anyone else accidentally creates folders like this in their onedrive folder, but, if so, don't. 😀 
 ``` PowerShell
 # you'll need to make a folder to work in, i just used foo
 # so run this in whatever folder you you want to work in

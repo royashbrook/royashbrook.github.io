@@ -8,9 +8,9 @@ This is pretty much a no brainer for code. However I went and looked and everyth
 So I wrote a simple app to do it and put it on codeplex at:
 http://setfiledate.codeplex.com/
 
-This problem stemmed from the fact that I got this weird DVD player and I needed it to play some files from a USB stick in a loop. It loops fine, the problem was ordering. No clue how the ordering was. I thought it might be one of the dates so I tried setting them all manually, no dice. It's not the end of the world as I'll just make a looping DVD or a single media file which will loop, but I tried this first. =)
+This problem stemmed from the fact that I got this weird DVD player and I needed it to play some files from a USB stick in a loop. It loops fine, the problem was ordering. No clue how the ordering was. I thought it might be one of the dates so I tried setting them all manually, no dice. It's not the end of the world as I'll just make a looping DVD or a single media file which will loop, but I tried this first. 😀
 
-Here's the set code if you actually came to this post looking for that =P
+Here's the set code if you actually came to this post looking for that 😛
 
 ```csharp
 File.SetCreationTime(f, dt);

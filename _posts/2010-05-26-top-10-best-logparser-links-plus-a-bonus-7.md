@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Top 10 best LogParser links ( plus a bonus 7 =P )
+title: Top 10 best LogParser links ( plus a bonus 7 😛 )
 ---
 
 1. http://www.codinghorror.com/blog/2005/08/microsoft-logparser.html
    
-    This is my fav one because of the pretty picture at the top =P
+    This is my fav one because of the pretty picture at the top 😛
 
 2. http://www.symantec.com/connect/articles/forensic-log-parsing-microsofts-logparser
 
@@ -33,7 +33,7 @@ title: Top 10 best LogParser links ( plus a bonus 7 =P )
 
 8. http://blogs.msdn.com/b/mmcintyr/archive/2009/07/20/analyzing-iis-log-files-using-log-parser-part-1.aspx
 
-    This article started me wanting to do some series charts. That's right…. I blame you mike. =P and sadly, for some reason I wanted to do what he is doing in LogParser instead of just doing it in excel as he is doing it
+    This article started me wanting to do some series charts. That's right…. I blame you mike. 😛 and sadly, for some reason I wanted to do what he is doing in LogParser instead of just doing it in excel as he is doing it
 
 9. http://technet.microsoft.com/en-us/magazine/2006.08.insidemsft.aspx
 
@@ -53,7 +53,7 @@ Some bonus links that aren't in the top 10, but are bookmarked all the same for 
 
 - http://www.hmailserver.com/forum/viewtopic.php?f=7&t=11792
 
-    This forum thread has a batch file someone uses to get stats daily I believe or on demand, I like it just because it shows something someone else thought they wanted to see every day. =P
+    This forum thread has a batch file someone uses to get stats daily I believe or on demand, I like it just because it shows something someone else thought they wanted to see every day. 😛
 
 - http://www.patents.com/log-parser-20040254919.html
 
@@ -65,7 +65,7 @@ Some bonus links that aren't in the top 10, but are bookmarked all the same for 
 
 - http://charliearehart.sys-con.com/node/296223/mobile
 
-    Cold Fusion logs with LogParser.... How can I not include this adorable page =P
+    Cold Fusion logs with LogParser.... How can I not include this adorable page 😛
 
 - http://blogs.msdn.com/b/rahulso/archive/2008/07/16/logparser-scenario-9-find-out-what-is-the-peak-time-for-your-iis-server.aspx
 
@@ -77,5 +77,5 @@ Some bonus links that aren't in the top 10, but are bookmarked all the same for 
 
    
 
-There are a bunch of other pages, including the actual documentation and the official site. And plenty of people will probably say to go with one of the newer graphical tools etc. but oh well, I like using the command line and these are the links I like the most. =D
+There are a bunch of other pages, including the actual documentation and the official site. And plenty of people will probably say to go with one of the newer graphical tools etc. but oh well, I like using the command line and these are the links I like the most. 😁
 

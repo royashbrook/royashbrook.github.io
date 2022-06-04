@@ -12,7 +12,7 @@ Patching went well, and after each successful reboot when the system stabalized,
 
 After this process was completed, we needed to delete/consolidate all of the snapshots. So I just selected them all in snapshot manager and selected delete all. ![delete?](https://i.stack.imgur.com/Mat9P.png) Vmware, then said it would consolidate and remove them and started a 'remove all' task which seemed to go well until it got to 99% and then it didn't move.
 
-After some research online, I found some commands to check on the job and we ended up making a call to vmware to give us some additional status and they gave me another command that allowed me to see the actual status on the restore process. These are below. =)
+After some research online, I found some commands to check on the job and we ended up making a call to vmware to give us some additional status and they gave me another command that allowed me to see the actual status on the restore process. These are below. 😀
 
 ```sh
 # SSH into the host with your preferred tool

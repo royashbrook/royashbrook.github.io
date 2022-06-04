@@ -3,7 +3,7 @@ layout: post
 title: for > foreach
 ---
 
-i feel like i have seen a ton of places that say for and foreach are the same performance-wise in .net. i never really worried about it much. i have historically done a lot of refactoring and loops are definitely one area you can see lots of improvement in. so i figured i would post some actual documentation about this. =)
+i feel like i have seen a ton of places that say for and foreach are the same performance-wise in .net. i never really worried about it much. i have historically done a lot of refactoring and loops are definitely one area you can see lots of improvement in. so i figured i would post some actual documentation about this. 😀
 
  quoted from http://msdn2.microsoft.com/en-us/library/ms998574.aspx:
 
@@ -15,4 +15,4 @@ For more information about implementing custom collections and about how to impl
 
 > Consider using a for loop instead of foreach to increase performance for iterating through .NET Framework collections that can be indexed with an integer.
 
-so, there you have it. use for to get the greatest performance. =)
+so, there you have it. use for to get the greatest performance. 😀

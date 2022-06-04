@@ -23,6 +23,6 @@ Source article is using powershell to pretty up the info, but the function liste
    Bytes : 192119912385 192119912385         0         0         0         0
 `
 
-Then easy enough to just divide to get the number at the command line like `192119912385/1024/1024/1024` to get `178.925611437298` in GB. You may prefer to just divide by 1000s instead of 1024. Dealer's choice. =)
+Then easy enough to just divide to get the number at the command line like `192119912385/1024/1024/1024` to get `178.925611437298` in GB. You may prefer to just divide by 1000s instead of 1024. Dealer's choice. 😀
 
 [source](https://www.linkedin.com/pulse/technical-thursdays-get-directory-sizes-stupidly-fast-carlos-nunez)

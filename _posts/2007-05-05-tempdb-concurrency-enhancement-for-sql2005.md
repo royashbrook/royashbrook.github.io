@@ -13,4 +13,4 @@ Increase the number of tempdb data files to be at least equal to the number of p
 
 That’s pretty much it. Definitely read the article though as it has a ton of great technical information about why this works and what is going on in a situation where something like this is needed.
 
-In general I would probably say if you *need* this fix, you really *need* to revisit why you are running a complete piece of crap application in a production environment, but that’s just me. =D
+In general I would probably say if you *need* this fix, you really *need* to revisit why you are running a complete piece of crap application in a production environment, but that’s just me. 😁

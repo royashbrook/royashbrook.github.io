@@ -16,7 +16,7 @@ Something on my wish-list, as far as my own personal knowledge, for a longtime w
 3. Update the Additional Namespace Imports tab to reflect the namespace you want to import:
 ![img](http://www.drowningintechnicaldebt.com/images/www_drowningintechnicaldebt_com/royashbrook/082010_2006_LINQPadandA3.png)
 
-4. PROFIT!! =P
+4. PROFIT!! 😛
 ```csharp
 using(PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "MyDomain))
     using(UserPrincipal usr = UserPrincipal.FindByIdentity(ctx, IdentityType.SamAccountName, "MyUserID"))

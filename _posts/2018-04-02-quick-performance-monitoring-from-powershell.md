@@ -9,7 +9,7 @@ If, you wanted to take a quick peak, using powershell, on some performance metri
 
 "But why?" I hear you saying. "Can't I just do that in perfmon or any other tool made for this?"
 
-Well, sure, but where's the fun in that. =)
+Well, sure, but where's the fun in that. 😀
 
 {% gist ddefc527ba3f403473360beefe5288f0 %}
 

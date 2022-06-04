@@ -23,7 +23,7 @@ Well, after looking at our files, it seems the databases were fine. Meaning, the
 
 I am not an exchange expert, but a little googling around and a few emails to some other folks seemed to confirm that these were index files used by exchange search and could be safely deleted and exchange would rebuild whatever it needed. 
 
-I should first say, let me get out of my time machine where I travel from the past since I am using MS Exchange 2010 SP3. =) So keep that in mind if you are reading this and using something newer. We are in the midst of migrating to office 365, so I just need to limp what we have along for another 3-6 months.
+I should first say, let me get out of my time machine where I travel from the past since I am using MS Exchange 2010 SP3. 😀 So keep that in mind if you are reading this and using something newer. We are in the midst of migrating to office 365, so I just need to limp what we have along for another 3-6 months.
 
 __note: Future Me, if you are reading this and you still haven't migrated, don't lose hope, you'll get to the cloud someday!!!__
 
@@ -58,6 +58,6 @@ I don't think you *must* disable indexing, but i wanted to make sure I got a cle
 
 That's it. I got some much smaller indexes and everything was working ok. Worth mentioning this was a VMware hosted machine, so I took a snapshot and did this after backups ran just in case. I think you could just leave the indexing on, but it just seemed safer to make sure the indexing started fresh.
 
-It's also possible I could have simply disabled indexing and then removed the files manually, but what I did is what's up above. =)
+It's also possible I could have simply disabled indexing and then removed the files manually, but what I did is what's up above. 😀
 
 

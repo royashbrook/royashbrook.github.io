@@ -3,7 +3,7 @@ layout: post
 title: select top 6 from (select top 10 from lists)
 ---
 
-ha! i got ya! you thought this was a sql post, but it's not =P jeff atwood of codinghorror.com fame has a great article posted about his favorite top 10 lists. the top 6 ones to be exact.
+ha! i got ya! you thought this was a sql post, but it's not 😛 jeff atwood of codinghorror.com fame has a great article posted about his favorite top 10 lists. the top 6 ones to be exact.
 
 here is the brief version with a link to each of them.
 

@@ -63,4 +63,4 @@ Status : Installed
 Name   : Microsoft.Extensions.Logging.Filter
 ```
 
-After this I was able to run all of the fun examples, as long as they didn't need windows specific items. If there is one thing I would suggest modifing in the examples it would be to make them cross platform as this seems like it is intended to be. It was a pain that none of the fun examples for machine status etc worked. But the ones that did sure were pretty. =)
+After this I was able to run all of the fun examples, as long as they didn't need windows specific items. If there is one thing I would suggest modifing in the examples it would be to make them cross platform as this seems like it is intended to be. It was a pain that none of the fun examples for machine status etc worked. But the ones that did sure were pretty. 😀

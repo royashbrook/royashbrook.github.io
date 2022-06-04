@@ -24,7 +24,7 @@ Import-PSSession $Session
 #Remove-PSSession $Session # when finished
 
 #create a new database for our inactive users
-# note i am sticking the log in the same location as this more of an archive and i have circular logging enabled. this isn't a best practice, but i only had one extra drive. =)
+# note i am sticking the log in the same location as this more of an archive and i have circular logging enabled. this isn't a best practice, but i only had one extra drive. 😀
 $db = 'Inactive Users'
 $p = 'path to folder you want this db in'
 new-mailboxdatabase -server $s -name $db -EdbFilePath '$p\db.edb' -LogFolderPath $p

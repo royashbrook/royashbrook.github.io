@@ -26,4 +26,4 @@ EXEC master..sp_addsrvrolemember
     , @rolename = N'sysadmin' (or whatever role you want to give them)
 ```
 
-there you go. how to add a local group, a bunch of users, and even set them up in sql as some role in like 2 minutes from the command line without waiting for stupid computer manager or sql mgmt studio to open. =) 
+there you go. how to add a local group, a bunch of users, and even set them up in sql as some role in like 2 minutes from the command line without waiting for stupid computer manager or sql mgmt studio to open. 😀 
