@@ -34,6 +34,21 @@ this worked like a champ and would give me a little server on http://127.0.0.1:4
 
 i also guess this is bound to an org or a user or something. i noticed i could not open codespaces in some other organizations, but i could open them in all of my own repos. you can read more about github codespaces [here](https://docs.github.com/en/codespaces). I think this is cool if you have older slower machines with good screens or you don't want to worry about infrastructure, but I gotta imagine many people already have laptops and most devs want to have a laptop i think, or at least a machine. probably pretty cool for bringing in people to just work on something as you just have them open it up and their machine doesn't matter. i'm trying to think about how i would feel if i went to a new company and they just had everything setup in the cloud like this and wanted me to have my own machine. i'm guessing that as long as i had one or maybe there was at least some kind of an allowance for one, i would be fine. i haven't checked yet, but i have to wonder if this would make working on a tablet actually possible. would seem like it would, especially if you are ok with that screen size.
 
-i personally prefer to use a larger monitor laptop or a double wide monitor for coding, but anything that can plug into a big monitor should work for this. it actually works quite well. i'll have to test it with some 'non-github pages' things
+i personally prefer to use a larger monitor laptop or a double wide monitor for coding, but anything that can plug into a big monitor should work for this. it actually works quite well. i'll have to test it with some 'non-github pages' things.
+
+i tried [crispy-adventure](https://github.com/royashbrook/crispy-adventure) out and it seemed good. i first tried just running it from the browser and the initial spin up seemed to hang when i did npm start run, but i went back to the window with vscode and clicked on the 'open in browser' and that seemed to work. unfortunately cors doesn't allow the port forwarded url so the ms login didn't work right, but it seemed to be functioning as expected.
+
+I fired it up locally and things worked as expected. funny that in vscode even though it said localhost in the window, it would try and bring up 127.0.0.1
+
+<img width="589" alt="image" src="https://user-images.githubusercontent.com/7390156/172084180-a099faf5-b088-4f1d-bbef-01182e73beee.png">
+
+the good news was that i could just change the url to localhost, and it worked fine. i had to add a new entry into authorization on the app registration in azure for 8081 to work, but that took a moment and it was just for testing anyway.
+
+<img width="845" alt="image" src="https://user-images.githubusercontent.com/7390156/172084272-46e0d86c-b53e-47c4-a536-9eb4af41d22e.png">
+
+working as expected, this is showing after the auto login to ms, and clicking the button to get the 'secret' from from a list on o365 sharepoint.
+
+pretty fun stuff. interested to see how much i actually use it, but i'm going to try and use it and see how i feel.
+
 
 
