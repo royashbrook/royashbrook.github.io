@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Blog Migration/Update and GitHub Codespaces
 date: '2022-06-08'
 ---
