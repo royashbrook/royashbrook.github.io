@@ -33,6 +33,14 @@ I decided at this point to give that AOT compiler hint a shot because why not ta
 
 at this point, i decided to maybe move on with converting my app. seemed like this would work even if i needed some more work. 
 
+## conversion!
+
+the application I'm converting is [here](https://github.com/royashbrook/CLI-PasswordHasher). it's a small tool i wrote to generate the password hash used by aspnet identity, but without a user object. why does this tool exist, well.... it's a long story that has to do with a staged update of a very legacy system over to a newer version of dotnet. this particular system had user accounts in there, but we generate the passwords and provide them manually. when moving to dotnet core it was really setup to allow users to do that, but we didn't want that. so we ripped all of that stuff out, and i wrote this tool to allow you to generate the same hash, but without having to have a user object tied to it which was part of the default ms implementation.
+
+so for a 'web version' the idea was to just have a text box to put the password in, and a hash will come out. i believe the cli has a way to check a hash as well with a password. so put in password and hash and it will say if they match, i'm not sure i'm going to implement that here as that was more a troubleshooting feature for me when i was working on it back then.
+
+
+
 
 
 
