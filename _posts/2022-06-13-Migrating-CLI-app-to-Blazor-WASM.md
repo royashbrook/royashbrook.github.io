@@ -27,7 +27,11 @@ prior to doing anything on that page though, i thought why not just fire up `dot
 
 ![image](https://user-images.githubusercontent.com/7390156/173206453-a9c0af34-577c-4a56-a93b-4a12927f39f9.png)
 
+jumping into that dir and running the same publish command seems to look like we have the wasm output i was wanting to see. although i see it's using that framework dir and it's like 15MB for I'm guessing a nothing-burger worth of code. i remember client size being the main reason i didn't pursue blazor/wasm years ago when i first looked at it. i'm sure there are some tricks to tweak this down, and i think moving a cli app to a web workable version, even if it's a little bigger, is probably pretty nice for my use case so, yay.... i think!?
 
+I decided at this point to give that AOT compiler hint a shot because why not take a peak. I had to run another `sudo dotnet workload restore` for this to work, but it did after that. took quite a little bit to actually do it's thing though because i was compiling the client and server project. but i didn't want to spend time stripping that out quite yet, figured i would just see how that went. it took about 2-3 minutes on a m1 mbpro, so not 'zippy' but was fine for one run. at this point i was really just trying to see if i could make a wasm app of any kind and see it published in a folder that i thought i could copy/deploy somewhere. unfortunately this latest change seemed to make a 30MB deployment which was suboptimal.
+
+at this point, i decided to maybe move on with converting my app. seemed like this would work even if i needed some more work. 
 
 
 
