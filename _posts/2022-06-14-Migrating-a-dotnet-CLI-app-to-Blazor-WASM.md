@@ -1,9 +1,10 @@
 ---
 layout: post
 published: true
-title: Migrating a dotnetcore CLI app to Blazor/WASM
+title: Migrating a dotnet CLI app to Blazor/WASM
 date: '2022-06-14'
 ---
+
 I have an old app written in dotnetcore that i'd like to turn into a static app to run on the web. Seems like a decent candidate for blazor/wasm. Here's the steps I went through to do it!
 
 ## A template?
@@ -66,6 +67,20 @@ screenshot:
 
 after i finished this, it ocurred to me that i probably should have just made this more generic so it was more like wrapping a call to the original main. that would make it easier to copy/paste drop in anothe executable basically with minimal changes. perhaps another time as i have no other cli tools waiting on this functionality.
 
-There are a couple of things I may want to go back and fiddle with. making the call async would be nice so we could put a spinning wheel up. also i think i need to preload the css as i ran into situations where sometimes it was not coming down as every once in a while i would get a page but the css wouldn't show up beforehand. i'd also like to shorten that URL, but it'll work for now. =)
+There are a couple of things I may want to go back and fiddle with. making the call async would be nice so we could put a spinning wheel up. also i think i need to preload the css as i ran into situations where sometimes it was not coming down as every once in a while i would get a page but the css wouldn't show up beforehand. i'd also like to shorten that URL, but it'll work for now. =) i also saw the output was `netstandard2.1` but this worked fine so i just left it. if i ever give a second look, that's another thing i'd like to fiddle with.
 
-This was purpose built to solve a very specific problem years ago, so it's not *wayyyy* up there on my priority list. i am betting someone has already probably done this in a much nicer way, but i wanted to go through the exercise. nice to take a dotnet cli app and run it directly in the browser with basically no real code changes. 
+i also imagine that the payload size could be reduced, although that wasn't as bas as i thought it might be. storage after a wipe and reload:
+
+<img width="395" alt="image" src="https://user-images.githubusercontent.com/7390156/173567784-09929621-62cc-49d7-93a0-7ade4be2cebc.png">
+
+network on a second reload:
+
+<img width="763" alt="image" src="https://user-images.githubusercontent.com/7390156/173568117-1433601a-8c2d-473a-abfc-598aec1c8688.png">
+
+the first load did give me a bunch of dotnet files, but they seem to cache well using the method in the template so actually not too bad. better than the last time i played around with blazor/wasm. i think my first hello world app had been like 30mb or something. 😀
+
+This was purpose built to solve a very specific problem years ago, so it's not *wayyyy* up there on my priority list. i am betting someone has already probably done this in a much nicer way, but i wanted to go through the exercise. nice to take a dotnet cli app and run it directly in the browser with basically no real code changes.
+
+🎉🎉🎉
+
+This was purpose built to solve a very specific problem years ago, so it's not *wayyyy* up there on my priority list. i am betting someone has already probably done this in a much nicer way, but i wanted to go through the exercise. nice to take a dotnet cli app and run it directly in the browser with basically no real code changes.
