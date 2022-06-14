@@ -31,13 +31,26 @@ jumping into that dir and running the same publish command seems to look like we
 
 I decided at this point to give that AOT compiler hint a shot because why not take a peak. I had to run another `sudo dotnet workload restore` for this to work, but it did after that. took quite a little bit to actually do it's thing though because i was compiling the client and server project. but i didn't want to spend time stripping that out quite yet, figured i would just see how that went. it took about 2-3 minutes on a m1 mbpro, so not 'zippy' but was fine for one run. at this point i was really just trying to see if i could make a wasm app of any kind and see it published in a folder that i thought i could copy/deploy somewhere. unfortunately this latest change seemed to make a 30MB deployment which was suboptimal.
 
-at this point, i decided to maybe move on with converting my app. seemed like this would work even if i needed some more work. 
+at this point, i decided to maybe move on with converting my app. seemed like this would work even if i needed some more work.
+
+i must say i find the documentation pretty annoying when i think this should be a super easy thing to do. doing a dotnet publish on the basic app didn't actually create an index.html or anything in the folders it said. and looking at the section for deployment strategies, you see something like this:
+
+![image](https://user-images.githubusercontent.com/7390156/173207409-f52f7713-f796-4b6b-98e9-488ebb5e2ce0.png)
+
+and when you go to that section you see this:
+
+![image](https://user-images.githubusercontent.com/7390156/173207426-adc649d1-31e5-4954-8b6c-451ecd2c3455.png)
+
+which would lead you to believe if you did a publish, that folder would have all the stuff you need in it, but it does not. Fortunately, down the page a bit, we find a link to [this](https://github.com/SteveSandersonMS/BlazorOnGitHubPages) and *THAT* actually seems to be what i really want. i feel like there is more work to be done, but i think that link is probably going to be the good one to 'start' with as i really just wanted to put this site on github pages anyway =P
 
 ## conversion!
 
 the application I'm converting is [here](https://github.com/royashbrook/CLI-PasswordHasher). it's a small tool i wrote to generate the password hash used by aspnet identity, but without a user object. why does this tool exist, well.... it's a long story that has to do with a staged update of a very legacy system over to a newer version of dotnet. this particular system had user accounts in there, but we generate the passwords and provide them manually. when moving to dotnet core it was really setup to allow users to do that, but we didn't want that. so we ripped all of that stuff out, and i wrote this tool to allow you to generate the same hash, but without having to have a user object tied to it which was part of the default ms implementation.
 
 so for a 'web version' the idea was to just have a text box to put the password in, and a hash will come out. i believe the cli has a way to check a hash as well with a password. so put in password and hash and it will say if they match, i'm not sure i'm going to implement that here as that was more a troubleshooting feature for me when i was working on it back then.
+
+so, to start i went ahead and cloned the blazor repo i mentioned above with `gh repo clone SteveSandersonMS/BlazorOnGitHubPages` and run `dotnet watch` to validate that it works and it does.
+
 
 
 
