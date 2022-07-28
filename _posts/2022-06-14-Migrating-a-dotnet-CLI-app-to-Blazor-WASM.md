@@ -82,5 +82,3 @@ the first load did give me a bunch of dotnet files, but they seem to cache well 
 This was purpose built to solve a very specific problem years ago, so it's not *wayyyy* up there on my priority list. i am betting someone has already probably done this in a much nicer way, but i wanted to go through the exercise. nice to take a dotnet cli app and run it directly in the browser with basically no real code changes.
 
 🎉🎉🎉
-
-This was purpose built to solve a very specific problem years ago, so it's not *wayyyy* up there on my priority list. i am betting someone has already probably done this in a much nicer way, but i wanted to go through the exercise. nice to take a dotnet cli app and run it directly in the browser with basically no real code changes.
