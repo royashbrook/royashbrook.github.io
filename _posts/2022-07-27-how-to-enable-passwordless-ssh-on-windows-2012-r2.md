@@ -2,7 +2,7 @@
 layout: post
 published: true
 title: how to enable passwordless ssh on windows 2012 r2
-date: '2022-06-14'
+date: '2022-07-27'
 ---
 
 With a newer windows server, ssh is a [bit more turnkey](https://techcommunity.microsoft.com/t5/itops-talk-blog/installing-and-configuring-openssh-on-windows-server-2019/ba-p/309540), but there are some steps required to get it going on an older server. Let's talk about it.
