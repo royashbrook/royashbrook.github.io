@@ -25,7 +25,7 @@ the computers in question were both Lenovo 300e devices. One was a chromebook, a
 
 ## trouble in paradise
 
-there were actually several issues when i started this process. first, it seemed that chromeos (at least the version at the time) would not support the 64gb emmc driver installed already. i already knew from having one of these devices opened there was another hard driver slot, so i ordered some nvme drivers to use instead. these were about 10 bucks each and that seemed like a pretty easy trade off. i got things in, and loaded up chromeos with no issues. once installed, i discovered the second issue, the touchpad not always working. i did notice the touchpad issue, but when i discussed with administration during the summer it sounded like it was no big deal as these are all touch screen tablet machines anyway. i also didn't feel like i saw it on more than a couple of devices, and we were in a rush so we just moved on. finally, while i was waiting for the hard drives to come in, i did go ahead and upgrade and patch these to win11 and get everything setup on them. this was great, but the third issue i ran into was how to manage logins on these devices. i'll skip that for now as we went with chromeos, but i was a little sad to basically turn off everything i setup for dealing with windows. =)
+there were actually several issues when i started this process. first, it seemed that chromeos (at least the version at the time) would not support the 64gb emmc driver installed already. i already knew from having one of these devices opened there was another hard driver slot, so i ordered some nvme drivers to use instead. these were about 10 bucks each and that seemed like a pretty easy trade off. i got things in, and loaded up chromeos with no issues. once installed, i discovered the second issue, the touchpad not always working. i did notice the touchpad issue, but when i discussed with administration during the summer it sounded like it was no big deal as these are all touch screen tablet machines anyway. i also didn't feel like i saw it on more than a couple of devices, and we were in a rush so we just moved on. finally, while i was waiting for the hard drives to come in, i did go ahead and upgrade and patch these to win11 and get everything setup on them. this was great, but the third issue i ran into was how to manage logins on these devices. i'll skip that for now as we went with chromeos, but i was a little sad to basically turn off everything i setup for dealing with windows. 😀
 
 ## these touchpads don't work?!
 
@@ -35,6 +35,18 @@ so since this seemed to be such a major issue, i started trying to figure out wh
 
 i also ran into an issue where the bios updater didn't seem to work in windows 11. it would reboot, but do nothing. i had to shift+restart to the recovery menu, then i could run command line and run bios from there and it all worked like a champ. it seemed to wipeout the chromeos bootloader, but i just reloaded chrome and all was well.
 
+just to illustrate how similar these devices look...
+
+chromebook:
+
+<img width="684" alt="image" src="https://user-images.githubusercontent.com/7390156/190876217-50b3b6d6-4d75-44bc-9853-8db8a566848e.png">
+
+pc:
+
+<img width="650" alt="image" src="https://user-images.githubusercontent.com/7390156/190876247-03b62680-7a56-431e-a0de-c1c5fe45e8e6.png">
+
+basically identical except for that chrome logo.
+
 ## so... happily ever after?
 
-well, not quite. for this issue, yes. but i also have some *other* lenovo devices with other issues with chromeos, including some others with touchpad issues. hopefully an old bios update will work for those as well. i think my biggest current issue is the lpd printing on these chromeos devices doesn't seem to work right with our larger ricoh network printers. that's a post for another day, though. =)
+well, not quite. for this issue, yes. but i also have some *other* lenovo devices with other issues with chromeos, including some others with touchpad issues. hopefully an old bios update will work for those as well. i think my biggest current issue is the lpd printing on these chromeos devices doesn't seem to work right with our larger ricoh network printers. that's a post for another day, though. 😀
