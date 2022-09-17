@@ -5,7 +5,7 @@ title: my mousepad doesn't work!!
 date: '2022-09-17'
 ---
 
-this year i volunteered to help take care of all of the it needs at my children's school. what posessed me to do such a thing, you ask? well, i just wanted to help out is the simple answer. it has been a lot of work, but pretty fun overall and i hope we can eventually get the kids involved at the school and possibly start some kind of learning program around it operations in some fashion. but that's not what this blog post is about.
+this year i volunteered to help take care of all of the it needs at my children's school. why would i do such a thing, you ask? well, i just wanted to help out is the simple answer. it has been a lot of work, but pretty fun overall and i hope we can eventually get the kids involved at the school and possibly start some kind of learning program around it operations in some fashion. but that's not what this blog post is about.
 
 ## My mousepad doesn't work!!
 
