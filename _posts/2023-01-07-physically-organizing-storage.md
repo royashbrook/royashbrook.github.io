@@ -27,6 +27,7 @@ i'd like to avoid doing this in the future, so i'm going to implement some kind 
 
 i broke my items to store into several categories. the categories had to be small enough that they would, at most, fit into a 66 qt storage bin, and preferably fit into a 34 qt storage bin. these bins are flat and fit my existing storage shelf very well.
 
+<img width="498" alt="image" src="https://user-images.githubusercontent.com/7390156/210855309-da4e3df2-426b-423c-b001-53c2e77aa021.png">
 
 
 
