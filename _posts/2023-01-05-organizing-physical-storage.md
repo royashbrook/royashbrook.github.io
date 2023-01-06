@@ -1,8 +1,8 @@
 ---
 layout: post
-published: false
-title: organizing my physical stuff
-date: '2023-01-07'
+published: true
+title: organizing physical storage
+date: '2023-01-05'
 ---
 
 i generally take off the last and first week of the year as a winter vacation. while i would love to say that i typically spend all of that time relaxing with friends and family, and i do some of that, i typically put together a list of things i want to get done during that time. one item that is frequently on that list is cleaning my office or garage. while i typically keep these places relatively clean, i will revisit my organization in those areas typically during this time off. this year is no exception, but i've decided to switch things up to begin to age out some of the items that i use very infrequently. i thought it would be helpful to write this down here.
@@ -25,11 +25,30 @@ i'd like to avoid doing this in the future, so i'm going to implement some kind 
 
 ## the solution
 
-i broke my items to store into several categories. the categories had to be small enough that they would, at most, fit into a 66 qt storage bin, and preferably fit into a 34 qt storage bin. these bins are flat and fit my existing storage shelf very well.
+i broke my items to store into several categories. the categories had to be small enough that they would, at most, fit into a 66 qt storage bin, and preferably fit into a 34 qt storage bin. these bins are flat and fit my existing storage shelf very well. It looks similar to this drawing.
 
 <img width="498" alt="image" src="https://user-images.githubusercontent.com/7390156/210855309-da4e3df2-426b-423c-b001-53c2e77aa021.png">
 
+This gives me 8 'stacks' to work with. For most, i would prefer to use only 2 bins, but some items i need to store for longer. So the idea is each bin gets a label and a date. this is how 'old' the bin is. anytime i use something from that bin, i move it up in the stack so it's easier to find. While the most frequently used items I actually have hanging in the wall, or in a tool bag or in a drawer or on a desk for ready use, some things i want to leave in the garage even if they are needed somewhat frequently. So having 3 makes that an option.
 
+1. power cables and extension cables
+2. misc computer cables
+3. hardware/screws/etc
+4. large tools (66qt)
+5. hand tools
+6. music/audio stuff
+7. random
+8. more random
+
+beyond these somewhat generic buckets, i moved the 'tape' and the 'battery' bins into my office as well as one 'misc cache' bin. i have room for 4 bins in my office in some drawer type slots, as well as 3 large drawers that can be used for 'recently used' storage. 
+
+## conclusion
+
+i'll have to check back in something like a year, i suppose, to really see if this made a major difference. part of this cleaning process was that i also cleaned out a bunch of items from the garage which amounted to a giant green garbage can full of random things, as well as giving a way quite a few tools and misc tech things. i emptied 8 banker's boxes worth of random items and reclaimed a lot of storage bins (7x15qt, 6x34qt, 1x66qt). due to that mass reduction, there is already a huge difference in my ability to 'find' things, but i'm hoping this will have the intended long term impact i am hoping for.
+
+one thing i noticed as i was putting my much smaller inventory back into the garage is that i could *really* probably just use a general cache instead of stacks. since the goal was just to age out the categories of stuff, it would be easy enough to just pull 'whatever' from the archive bins and just use a handful of 'cache' bins. then i could resort in a year or two if needed into the specific bins, or have another round of purge since i will know what date i did this purge on. this will have, i think, the same effect, but require a lot less bins. =P
+
+maybe, with enough time, i'll have enough bins to organize my sons legos so we can reclaim the dining room. =P
 
 
 upon first getting engaged, i did some inventory. there are currently no it folks at the school. one of the things i noticed is we had quite a lot of chromebooks, quite a lot of older macs, and some pcs. the pcs seemed to be purchased by the previous it person who preferred pcs over chromebooks or macs. the teachers all loved macs. this spans a couple of years and some purchases took place during the pandemic, so it's not exactly normal times and i won't digress much on that.
