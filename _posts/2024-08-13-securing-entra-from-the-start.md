@@ -121,14 +121,24 @@ fabulous. i 'think' maybe legacy was fixed with the security defaults. let's mov
 
 # what could i fix?
 
-- Do not allow users to grant consent to unreliable applications - I just set this to admin only
-- Enable password hash sync if hybrid - i'm not hybrid, so dismissed
+- Protect all users with a user risk policy - p2 only, dismiss
+- Protect all users with a sign-in risk policy - p2 only, dismiss
+- Use least privileged administrative roles - it says i have 0 users that fit this, dismiss
+- Designate more than one global admin - already done, see below...
+- Enable password hash sync if hybrid - i'm not hybrid, dismiss
+- Ensure all users can complete multifactor authentication - fixed as noted above
+- Do not allow users to grant consent to unreliable applications - I just set this to admin only, fixed
+- Enable policy to block legacy authentication - fixed as noted above
 
 so.. one fun thing was i was seemingly unable to 'dismiss' anything. so above where i noted dismissed, i should note that every dismissal was greeted with this status message.
 
 <img width="348" alt="image" src="https://github.com/user-attachments/assets/e879dfac-518f-46af-80bd-24b56fe5d3a3">
 
+i was also not able to 'postpone' a recommendation and got the same thing. some of these required a p2 license so i can't do them, but seems there is no way to clear them.
+
 for 'more than one admin' this one was recommended, but was already done. for some reason i was able to dismiss this one and just put 'other' and note it's already complete and it did dismiss... i'm not sure i'm clear on why these dismissals are and aren't working. i also can't seem to be able to 'complete' things but maybe they will auto complete over time? 
+
+i think i'll pause here and maybe check back in 24 hours to see if anything has changed once the security audit can check again...
 
 
 
