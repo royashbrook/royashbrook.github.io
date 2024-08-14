@@ -48,3 +48,90 @@ i'm going to start with the items that have the highest score first and work my 
 actually... we do want mfa. and what's more, we *do* have mfa as i already have microsoft authenticator enabled for my logins here... odd. so i click on the mfa wizard link, and unfortunately this just takes me to godaddy's admin panel. so, i try going to admin>security settings and this mostly brings me to just more help article links. i guess let's go down the rabbit hole some more.
 
 <img width="1031" alt="image" src="https://github.com/user-attachments/assets/d8f3de52-7f84-4c3b-91f6-533fadb42b73">
+
+i just click on 'manage' and i get this window
+
+<img width="735" alt="image" src="https://github.com/user-attachments/assets/b64d7c0c-d68b-4ea6-a309-11a738cefbb3">
+
+and now.... it's done? i guess.
+
+<img width="732" alt="image" src="https://github.com/user-attachments/assets/52d47d07-321e-4be5-8223-6324c540e91e">
+
+i can't see that anything is done and i already had mfa enabled so... maybe this is just a suggestion list? i guess let's move onto the next one.
+
+## no more legacy
+
+<img width="1372" alt="image" src="https://github.com/user-attachments/assets/bc64d0eb-7e95-46b5-885d-53ba9ffdb4a1">
+
+so next we are blocking legacy auth. i followed some of the links and they just seemed to go to the same place. fine, let's maybe revisit that security page on godaddy. i'll try this link next.
+
+<img width="1034" alt="image" src="https://github.com/user-attachments/assets/79f989bb-ea65-443d-bb06-c4482a0b57e9">
+
+this took me to the following page, which _did_ actually take me to a page where i could enable mfa on a user!
+
+https://www.godaddy.com/help/enable-or-disable-multi-factor-authentication-32039?isc=appemail40&utm_source=o365&utm_medium=applications&utm_campaign=en-us_corp_applications_base
+
+i ended up on a page that looks kind of like this and was able to enable mfa on each account
+
+<img width="237" alt="image" src="https://github.com/user-attachments/assets/60bbdfbb-62a2-4122-b122-5011af006bae">
+
+i was able to select both, and there was a way to bulk enable
+
+<img width="215" alt="image" src="https://github.com/user-attachments/assets/520ef2ea-c660-4205-b751-613ec8c68751">
+
+so now mfa is on... again... i think? it shows enabled for the accounts anyway, so back to the legacy. i still can't find a 'setting' for this as i keep getting taken to godaddy pages, not the normal admin pages i expect and had when i had a full normal tenant. 
+
+then i noticed on the recommendation page it says i can just enable security defaults as an action plan.... well i did that earlier in the goaddy portal, maybe i can follow this link?
+
+<img width="1369" alt="image" src="https://github.com/user-attachments/assets/1034663b-a7ca-4840-8fc2-e97ec14202e8">
+
+this link takes me to an ms page here:
+
+https://learn.microsoft.com/en-us/entra/fundamentals/security-defaults#enabling-security-defaults
+
+looks like this is just a setting in the entra settings.
+
+sure enough, if i go to properties, i do not have security defaults enabled.
+
+<img width="401" alt="image" src="https://github.com/user-attachments/assets/4ce0098e-7fc4-4451-b058-dd0067b9e2be">
+
+so i click on the link to manage and......
+
+<img width="418" alt="image" src="https://github.com/user-attachments/assets/89ffbac0-0515-46df-b6d2-b28028b1b693">
+
+ok... now i *did* enable security defaults in the godaddy management console. maybe i need to let the security thing have 24 hours to update? maybe there is a way to force the security to audit again? let's ask chatgpt...
+
+<img width="817" alt="image" src="https://github.com/user-attachments/assets/76bbb3f5-5d9a-4da5-99cd-68b3bf98ad23">
+
+seems straightforward. let's give it a whirl.
+
+... well unfortunately, this seems bogus as i don't have this option. after some research i found multiple articles like this:
+
+https://learn.microsoft.com/en-us/answers/questions/1119107/re-evaluate-security-recommendations
+
+where people complained about this same issue. i decided to just look through all of the recommendations to see if there was a fix button for any of these, or if they all just said something like enable security defaults. unfortunately, to my surprise, now when i check the recommendation page on entra i see this:
+
+<img width="483" alt="image" src="https://github.com/user-attachments/assets/42b8ce2b-423b-4ced-8476-04795a386fbc">
+
+hmmm... seems i have protected the system from myself, lol. after logging out and in a few times and trying different paths to reopen (probably should have just closed the browser or something) i finally got the recommendations to pop back up. and even the org shows it is protected by security defaults now
+
+<img width="353" alt="image" src="https://github.com/user-attachments/assets/c265dadf-6203-4200-b0a6-17930a061ef0">
+
+fabulous. i 'think' maybe legacy was fixed with the security defaults. let's move on to some other ones.
+
+# what could i fix?
+
+- Do not allow users to grant consent to unreliable applications - I just set this to admin only
+- Enable password hash sync if hybrid - i'm not hybrid, so dismissed
+
+so.. one fun thing was i was seemingly unable to 'dismiss' anything. so above where i noted dismissed, i should note that every dismissal was greeted with this status message.
+
+<img width="348" alt="image" src="https://github.com/user-attachments/assets/e879dfac-518f-46af-80bd-24b56fe5d3a3">
+
+for 'more than one admin' this one was recommended, but was already done. for some reason i was able to dismiss this one and just put 'other' and note it's already complete and it did dismiss... i'm not sure i'm clear on why these dismissals are and aren't working. i also can't seem to be able to 'complete' things but maybe they will auto complete over time? 
+
+
+
+
+
+
