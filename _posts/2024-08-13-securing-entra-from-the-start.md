@@ -140,6 +140,13 @@ for 'more than one admin' this one was recommended, but was already done. for so
 
 i think i'll pause here and maybe check back in 24 hours to see if anything has changed once the security audit can check again...
 
+<img width="238" alt="image" src="https://github.com/user-attachments/assets/6cf4ce7d-933f-4b8b-9d32-1245b75c4b4f">
+
+# the next day...
+
+so i came back the next day and it was not changed, so i thought maybe i'll give it a bit longer and take a look
+
+
 
 
 
