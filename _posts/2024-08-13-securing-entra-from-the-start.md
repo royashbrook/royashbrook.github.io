@@ -144,7 +144,17 @@ i think i'll pause here and maybe check back in 24 hours to see if anything has 
 
 # the next day...
 
-so i came back the next day and it was not changed, so i thought maybe i'll give it a bit longer and take a look
+so i came back the next day and it was not changed, so i thought maybe i'll give it a bit longer and take a look...
+
+i actually ended up waiting about a week to come back as the security center also was laggy for some reason too. i *still* was not able to actually 'resolve' these items in entra, but the security center gave me a way to resolve some of these items and accept some of the risks. in this case, i only have one global admin because i only have one account, so, for example, i accepted this risk:
+
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/eb9e53d2-187b-4128-b005-11c3c81fd568">
+
+since the security center seems to be responsive this time around, it seems this is actually easier to handle in there. here is how i finished off this lates round.
+
+<img width="904" alt="image" src="https://github.com/user-attachments/assets/4b1a93cf-9e2f-47b8-a330-32dbe06cee49">
+
+since I am using godaddy, it seems like some of the stuff from their control center doesn't make it's way back to the ms area. but when you go to do some things like edit mfa, it kicks you to their control center. i have mfa enabled, but it doesn't see it, along with security defaults enabled. so i marked those as resolved by a third party. i accepted a few risks. and you can see one is still not resolved. this admin consent one. i just marked everything as admin consent required, but that seemed to never resolve it, so i set it to a limited view own profile with user consent and will give it a day to see if that works.
 
 
 
