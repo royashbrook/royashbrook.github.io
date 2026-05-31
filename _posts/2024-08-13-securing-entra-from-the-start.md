@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: securing entra from the start
 date: '2024-08-13'
 ---
@@ -158,7 +158,7 @@ since I am using godaddy, it seems like some of the stuff from their control cen
 
 
 
-
+>> note from the future 2026, i never posted this, but i figured why not throw it out there. this did end up wreaking some havoc later due to some of the split policies, but no big deal really. i think ultimately just an example of a flow that could be improved.
 
 
 
